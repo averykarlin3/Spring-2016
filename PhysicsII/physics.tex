@@ -10,6 +10,8 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{outlines}
 
 \usepackage{outlines}
 
@@ -22,18 +24,24 @@
 	urlcolor=black
 }
 
+\newcommand{\sepitem}{0pt} %Added room between items on the list, not including a list and its sublist
+\newcommand{\seppar}{1pt} %Between items and lists overall
+
+\setenumerate[1]{itemsep=\sepitem, parsep=\seppar}
+\setenumerate[2]{itemsep=\sepitem, parsep=\seppar}
+\setenumerate[3]{itemsep=\sepitem, parsep=\seppar}
+\setenumerate[4]{itemsep=\sepitem, parsep=\seppar}
+
 \newenvironment{outline*}
 {
 	\begin{outline}[enumerate]
-	\setlength{\itemsep}{0pt}
-	\setlength{\parsep}{0pt}
 	}
 	{\end{outline}
 }
 
 \begin{document}
 
-\title{AP Physics C: Electromagnetism}
+\title{Physics II: Electromagnetism}
 \author{Avery Karlin}
 \date{Spring 2016}
 %\newcommand{\textbook}{}
