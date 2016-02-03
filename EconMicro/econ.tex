@@ -10,6 +10,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{outlines}
 
 \usepackage{hyperref}
 \hypersetup {
@@ -20,13 +21,13 @@
 	urlcolor=black
 }
 
-\newenvironment{outline}
+\newenvironment{outline*}
 {
-	\begin{enumerate}
+	\begin{outline}[enumerate]
 	\setlength{\itemsep}{0pt}
 	\setlength{\parsep}{0pt}
 	}
-	{\end{enumerate}
+	{\end{outline}
 }
 
 \begin{document}
@@ -49,8 +50,8 @@
 \section{Chapter 2 - Supply and Demand}
 
 \subsection{Price Controls}
-\begin{outline}
-\item  
-\end{outline}
+\begin{outline*}
+\1  
+\end{outline*}
 
 \end{document}
