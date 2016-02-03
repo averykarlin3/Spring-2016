@@ -1,0 +1,51 @@
+\documentclass[11 pt, twoside]{article}
+\usepackage{textcomp}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{indentfirst} %Comment out for no first paragraph indent
+\usepackage[parfill]{parskip}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{outlines}
+
+\usepackage{hyperref}
+\hypersetup {
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\newenvironment{outline*}
+{
+	\begin{outline}[enumerate]
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	}
+	{\end{outline}
+}
+
+\begin{document}
+
+\title{}
+\author{Avery Karlin}
+\date{}
+\newcommand{\textbook}{}
+\newcommand{\teacher}{}
+
+\maketitle
+\newpage
+\tableofcontents
+\vspace{11pt}
+\noindent
+\underline{Primary Textbook}: \textbook\\
+\underline{Teacher}: \teacher
+\newpage
+
+\end{document}
