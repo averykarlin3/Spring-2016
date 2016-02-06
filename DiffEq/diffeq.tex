@@ -49,14 +49,23 @@
 \newpage
 
 \section{Introduction}
-Coupled systems are those defined as requiring being solved together, such as $$R' = aR + bJ, J' = cR + bJ,$$ rather than equations containing only their own function, which would be uncoupled.
 
-Linear differential equations are defined as equations with constants as the multiplier of each function derviative.
+\subsection{Definitions}
 
-First order differential equations means that the highest derivative in the equation is the first derivative, and is extended as such.
+\textbf{Differential equations} are relations between one or more unknown functions an a finate amount of their derivatives, along with a certain number of independent variables. Most are not solvable, and do not have approximations for more than a minute region of the function.
+
+\textbf{Linear differential equations} are defined as equations with algebraic functions as the multiplier of each function derviative and each derivative with a degree/power of 1, such that all linear equations are able to be solved.
+
+\textbf{First order differential equations} means that the highest derivative in the equation is the first derivative, and is extended as such.
+
+\textbf{Coupled systems} are those defined as requiring being solved together, such as $$X' = aX + bY, Y' = cX + bY,$$ rather than equations containing only their own function, which would be uncoupled.
+
+\textbf{Ordinary Differential Equations} are those where all unknown functions depend on the same, single independent variable, while \textbf{Partial Differential Equations} are those where the functions have multiple independent variables. In addition though, vector function differential equations can fall into either catagory, action more as a system of differential equations, rather than a single one.
+
+Finally, in general, either an initial condition is set allowing it to be solved for a single solution, or a family of solution must be considered as the answer.
+
+\subsection{Example}
 
 For some identically restricted, coupled functions, $$R' = aR + bJ, J' = bR + aJ,$$ where R(0) = $R_0$ and J(0) = $J_0$, where $a < 0, b > 0$, if $|a| > |b|$, we can graph the phase plane of R on the x-axis, J on the y-axis, such that for all possible functions, it moves toward the stable node (0, 0). These stable nodes don't need to be a point, but rather can be a curve of some sort. If $|a| < |b|$, if the initial points are above R = -J, it moves in a parabolic fashion until asymptotic to R = J on the positive side. If below R = -J, it moves similarly, except asymptotic to R = J on the negative side. Finally, if $|a| = |b|$, the function moves infinitely in a circle around the origin, with the radius determined by the initial point.
-
-\section{Background on $\mathbb{R}$}
 
 \end{document}
