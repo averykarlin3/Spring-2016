@@ -1,6 +1,7 @@
 \contentsline {section}{\numberline {1}Chapter 1 - Introduction to Comparative Government}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Comparative Method}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Sovereignty, Authority, and Power}{3}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Nation-States}{3}{subsubsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2}Sovereignty, Authority, and Power}{4}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Nation-States}{4}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Governmental Regimes}{4}{subsubsection.1.2.2}
-\contentsline {section}{\numberline {2}Articles}{4}{section.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Legitimacy}{6}{subsubsection.1.2.3}
+\contentsline {section}{\numberline {2}Articles}{6}{section.2}

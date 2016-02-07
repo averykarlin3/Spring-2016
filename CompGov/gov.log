@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.9.24)  6 FEB 2016 17:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.9.24)  7 FEB 2016 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -919,26 +919,26 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 (./gov.aux)
 \openout1 = `gov.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -976,7 +976,7 @@ LaTeX Font Info:    ... okay on input line 40.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 40.
+Package hyperref Info: Link coloring ON on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -986,20 +986,20 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (./gov.out) (./gov.out)
 \@outlinefile=\write4
 \openout4 = `gov.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1010,29 +1010,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `gov.toc'.
 
 
-[2] [3]
-Overfull \hbox (17.52065pt too wide) in paragraph at lines 102--103
+[2] [3] [4]
+Overfull \hbox (17.52065pt too wide) in paragraph at lines 118--119
 []\OT1/cmr/m/n/10.95 Military rule is a com-mon form of au-thor-i-tar-ian, of-t
 en tak-ing power in a forced takeover/coup
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (./gov.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 111.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `gov.out' has not changed.
-(rerunfilecheck)             Checksum: 0850A8DAE4E5FFBED584E502B1C315EF;428.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
+(rerunfilecheck)             Checksum: 35803893E0A7DCAED38BF1CD0A456580;497.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 15271 strings out of 495029
- 265016 string characters out of 6181523
+ 15272 strings out of 495029
+ 265037 string characters out of 6181523
  340524 words of memory out of 5000000
- 18192 multiletter control sequences out of 15000+600000
+ 18193 multiletter control sequences out of 15000+600000
  11352 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,55p,418b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,6n,55p,413b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gov.dvi (4 pages, 27400 bytes).
+Output written on gov.dvi (6 pages, 41116 bytes).
