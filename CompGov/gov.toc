@@ -4,4 +4,9 @@
 \contentsline {subsubsection}{\numberline {1.2.1}Nation-States}{4}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Governmental Regimes}{4}{subsubsection.1.2.2}
 \contentsline {subsubsection}{\numberline {1.2.3}Legitimacy}{6}{subsubsection.1.2.3}
-\contentsline {section}{\numberline {2}Articles}{6}{section.2}
+\contentsline {subsubsection}{\numberline {1.2.4}Political Culture and Ideologies}{6}{subsubsection.1.2.4}
+\contentsline {subsection}{\numberline {1.3}Political and Economic Change}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Citizens, Society, and the State}{8}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Political Institution}{8}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Public Policy}{8}{subsection.1.6}
+\contentsline {section}{\numberline {2}Articles}{8}{section.2}
