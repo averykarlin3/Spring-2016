@@ -31,6 +31,8 @@
 %	{\end{outline}
 %}
 
+\newcommand{\realn}{\mathbb{R}^n}
+
 \begin{document}
 
 \title{Differential Equations}
@@ -67,5 +69,20 @@ Finally, in general, either an initial condition is set allowing it to be solved
 \subsection{Example}
 
 For some identically restricted, coupled functions, $$R' = aR + bJ, J' = bR + aJ,$$ where R(0) = $R_0$ and J(0) = $J_0$, where $a < 0, b > 0$, if $|a| > |b|$, we can graph the phase plane of R on the x-axis, J on the y-axis, such that for all possible functions, it moves toward the stable node (0, 0). These stable nodes don't need to be a point, but rather can be a curve of some sort. If $|a| < |b|$, if the initial points are above R = -J, it moves in a parabolic fashion until asymptotic to R = J on the positive side. If below R = -J, it moves similarly, except asymptotic to R = J on the negative side. Finally, if $|a| = |b|$, the function moves infinitely in a circle around the origin, with the radius determined by the initial point.
+
+\section{Basic Existance and Uniqueness Theorems}
+
+\subsection{Flow Theorem}
+\subsubsection*{Theorem} 
+Let $\vec{F}(\vec{x}) = (F_1(\vec{x}), F_2(\vec{x}), \dots, F_n(\vec{x}))$ be a vector field (the assignment of a vector to each point within some subset of space) defined on some closed, bounded region D in $\realn$. Also assume $\vec{F}$ is $C^1$ and let $\vec{p}$ be a specific point interior to D. Then $\exists$ a function $\vec{\sigma}(t)$ from some time interval t, $(-\epsilon, \epsilon)$ with $\epsilon > 0$ into D, such that $\vec{\sigma}(0) = \vec{p}$ and $\vec{\sigma}'(t) = \vec{F}(\vec{\sigma}(t)).$
+
+Thus, for any point on the interval t, the velocity of $\vec{\sigma}$ is the vector field, such that we call $\vec{\sigma}$ the flow for $\vec{F}$ on that interval, starting at $\vec{p}$, which we call the initial condition.
+
+The flow is unique, such that for any two flows for $\vec{F}$ starting at the same initial condition, they must agree whenever both are defined.
+
+This can easily be extended to higher derivatives, such that it is written as a system of two differential equations, each going one derivative, though an initial condition is needed for both of the systems.
+
+\subsubsection*{Proof}
+
 
 \end{document}
