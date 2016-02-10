@@ -85,7 +85,7 @@ For some identically restricted, coupled functions, $$R' = aR + bJ, J' = bR + aJ
 \section{Basic Existance and Uniqueness Theorems}
 
 \subsection{Flow Theorem}
-\subsubsection*{Theorem} 
+\subsubsection{Theorem} 
 Let $\vec{F}(\vec{x}) = (F_1(\vec{x}), F_2(\vec{x}), \dots, F_n(\vec{x}))$ be a vector field (the assignment of a vector to each point within some subset of space) defined on some closed, bounded region D in $\realn$. Also assume $\vec{F}$ is $C^1$ and let $\vec{p}$ be a specific point interior to D. Then $\exists$ a function $\vec{\sigma}(t)$ from some time interval t, $(-\epsilon, \epsilon)$ with $\epsilon > 0$ into D, such that $\vec{\sigma}(0) = \vec{p}$ and $\vec{\sigma}'(t) = \vec{F}(\vec{\sigma}(t)).$
 
 Thus, for any point on the interval t, the velocity of $\vec{\sigma}$ is the vector field, such that we call $\vec{\sigma}$ the flow for $\vec{F}$ on that interval, starting at $\vec{p}$, which we call the initial condition.
@@ -94,7 +94,17 @@ The flow is unique, such that for any two flows for $\vec{F}$ starting at the sa
 
 This can easily be extended to higher derivatives, such that it is written as a system of two differential equations, each going one derivative, though an initial condition is needed for both of the systems.
 
-\subsubsection*{Proof}
+\subsubsection{Application}
+For some nth-order differential equation, $f(t)x^{(n)} = F(t, x, x', x'', \dots, x^{(n-1)})$, written in \textbf{singular standard form}, assuming there is no singularity (value at which $f(t_0)$ = 0), and f(t) is continuous, such that it is of constant sign by the Intermediate Value Theorem on the interval, we divide by f(t) to put the equation explicitly equal to the nth derivative term, called the \textbf{regular standard form case}. It must also be an initial value problem, such that initial values for each derivative and the function, x(t), itself, are given for some initial time, $t_0$. It should be noted that t and x can be vectors/vector-valued functions as well, and this would still be valid.
+
+\underline{Theorem:} There is a unique solution, $\sigma = x(t)$ defined in some time interval $(t_0 - \epsilon, t_0 + \epsilon)$, where $\epsilon > 0$.
+
+\underline{Proof:}
+Let $x_0 = t, x_1 = x_1(t) = x(t), x_2 = x(t), \dots, x_n = x^{(n-1)}(t)$, such that $x_0' = 1, x_1' = x_2, x_2' = x_3, \dots, x_n' = x^{(n)}$. It should also be noted that $x_0' = x_1 = F_0(x_0, x_1, \dots, x_n), x_1' = F_1(x_0, x_1, \dots, x_n)$, and so forth, removing the time dependence, such that each is purely in terms of $\vec{x} = (x_0, x_1, \dots, x_n)$. 
+
+Thus, the flow theorem is able to apply, assuming that the $F_d(\vec{x})$ functions are all $C^1$. Since each of the functions are either constant or continuous, with the exception of $x_n'$, we must show that F is $C^1$ for there to be a unique solution.
+
+\subsubsection{Proof}
 
 
 \end{document}
