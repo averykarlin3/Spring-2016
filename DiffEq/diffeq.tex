@@ -7,6 +7,7 @@
 \usepackage[parfill]{parskip}
 \usepackage{setspace}
 \usepackage{tikz}
+\usetikzlibrary{automata, topaths}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -74,9 +75,11 @@
 
 \textbf{Coupled systems} are those defined as requiring being solved together, such as $$X' = aX + bY, Y' = cX + bY,$$ rather than equations containing only their own function, which would be uncoupled.
 
-\textbf{Ordinary Differential Equations} are those where all unknown functions depend on the same, single independent variable, while \textbf{Partial Differential Equations} are those where the functions have multiple independent variables. In addition though, vector function differential equations can fall into either catagory, action more as a system of differential equations, rather than a single one.
+\textbf{Ordinary Differential Equations} are those where all unknown functions depend on the same, single independent variable, while \textbf{Partial Differential Equations} are those where the functions have multiple independent variables. In addition though, vector function differential equations can fall into either catagory, action more as a system of differential equations, rather than a single one. \textbf{Standard form} is written in the format of $G(t, x, x', \dots, x^{(n)}) = 0$, where x = x(t), the unknown function.
 
 Finally, in general, either an initial condition is set allowing it to be solved for a single solution, or a family of solution must be considered as the answer.
+
+\textbf{Vector fields} are used to determine the trajectory of a function based on the initial condition, such that in some region D, for every point $\vec{x}$, we attach the vector $\vec{F}(\vec{x})$ to the point, represented as a vector from $\vec{x}$.
 
 \subsection{Example}
 
@@ -97,7 +100,7 @@ The flow is unique, such that for any two flows for $\vec{F}$ starting at the sa
 This can easily be extended to higher derivatives, such that it is written as a system of two differential equations, each going one derivative, though an initial condition is needed for both of the systems.
 
 \subsubsection{Application}
-For some nth-order differential equation, $f(t)x^{(n)} = F(t, x, x', x'', \dots, x^{(n-1)})$, written in \textbf{singular standard form}, assuming there is no singularity (value at which $f(t_0)$ = 0), and f(t) is continuous, such that it is of constant sign by the Intermediate Value Theorem on the interval, we divide by f(t) to put the equation explicitly equal to the nth derivative term, called the \textbf{regular standard form case}. It must also be an initial value problem, such that initial values for each derivative and the function, x(t), itself, are given for some initial time, $t_0$. It should be noted that t and x can be vectors/vector-valued functions as well, and this would still be valid.
+For some nth-order differential equation, $f(t)x^{(n)} = F(t, x, x', x'', \dots, x^{(n-1)})$, written in \textbf{singular standard form}, assuming there is no singularity (value at which $f(t_0)$ = 0, such that the equation becomes algebraic at that point), and f(t) is continuous, such that it is of constant sign by the Intermediate Value Theorem on the interval, we divide by f(t) to put the equation explicitly equal to the nth derivative term, called the \textbf{regular standard form case}. It must also be an initial value problem, such that initial values for each derivative and the function, x(t), itself, are given for some initial time, $t_0$. It should be noted that t and x can be vectors/vector-valued functions as well, and this would still be valid.
 
 \underline{Theorem:} There is a unique solution, $\sigma = x(t)$ defined in some time interval $(t_0 - \epsilon, t_0 + \epsilon)$, where $\epsilon > 0$.
 
@@ -107,6 +110,97 @@ Let $x_0 = t, x_1 = x_1(t) = x(t), x_2 = x(t), \dots, x_n = x^{(n-1)}(t)$, such 
 Thus, the flow theorem is able to apply, assuming that the $F_d(\vec{x})$ functions are all $C^1$. Since each of the functions are either constant or continuous, with the exception of $x_n'$, we must show that F is $C^1$ for there to be a unique solution.
 
 \subsubsection{Proof}
+We prove this theorem in 2 dimensions, but the proof will be general enough for
+n-dimensions.
 
+Let us start with vector field $\vec{F}(x, y) = (A(x, y), B(x, y))$ where $A$
+and $B$ are defined on a closed, bounded region $D$ and are $C^1$. The systm
+differential equation we are trying to solve is:
+\[
+\begin{cases}
+x' &= A(x, y)\\
+y' &= B(x, y)
+\end{cases}
+\]
+
+where $x = x(t)$ and $y = y(t)$. The system can also be expressed as a single
+vector function $\vec{x}' = \vec{F}(\vec{x})$. Now we need the initial
+condition, let $\vec{x}(0) = \vec{p}$.
+
+First let us take the difference between two values of $A$:
+%\begin{align*}
+%\left|A(x_1, y_1) - A(x_2, y_2)\right| &= \left|A(x_1, y_1) - A(x_1, y_2) +
+%A(x_1, y_2) - A(x_2, y_2)\right|\\
+%&\leq \left|A(x_1, y_1) - A(x_1, y_2)\right| + \left|A(x_1, y_2) - A(x_2,
+%y_2)\right|\\
+%&\leq \left|\pfrac{A}{y} (x_1, y^*)(y_1 - y_2)\right| + \left|\pfrac{A}{x}
+%(x^*, y_2)(x_1 - x_2)\right|\\
+%\end{align*}
+
+where $x^*$ is some $x$ between $x_1$ and $x_2$, and $y^*$ is some $y$ between
+$y_1$ and $y_2$.
+
+%Since the derivatives of $A$ and $B$ are continuous functions defined over closed and bounded intervals, take $K =
+%\max\{\left|\pfrac{A}{x}\right|,\left|\pfrac{A}{y}\right|,\left|\pfrac{B}{x}\right|,\left|\pfrac{B}{y}\right|\}$
+%over $D$, so we get:
+%\begin{align*}
+%\left|\pfrac{A}{y} (x_1, y^*)(y_1 - y_2)\right| + \left|\pfrac{A}{x}
+%(x^*, y_2)(x_1 - x_2)\right| &= \left|\pfrac{A}{y} (x_1,
+%y^*)\right|\left|y_1 - y_2\right| + \left|\pfrac{A}{x} (x^*, y_2)\right|
+%\left|x_1 - x_2\right|\\
+%&\leq K(\left|x_1 - x_2\right| + \left|y_1 - y_2\right|)
+%\end{align*}
+
+%By the same logic, $\left|B(x_1, y_1) - B(x_2, y_2)\right| \leq K(|x_1 - x_2| + |y_1 - y_2|)$. These two inequalities are known as the \textbf{Lipschitz Condition}.
+
+Since $A$ and $B$ are continuous themselves on D, by the EVT we can find an upper bound $M$ for $|A|$ and $|B|$ on $D$:
+
+\[
+M = \max(\max_{(x,y) \in D} |A(x, y)|, \max_{(x, y) \in D} |B(x, y)|)
+\]
+
+The initial point $(p, q)$ is assumed to be on the \textit{interior} of $D$. So we can surround the point $p$ with a rectangle with corners defined by $(p - r, q - s), (p+r, q - s), (p+r, q+s), (p-r, q+s)$ for some $r, s > 0$ such that the rectangle lies within $D$. Now draw two lines through $(p, q)$, one with slope $M$ and one with slope $-M$.
+
+%\begin{figure}[ht]
+%\centering
+%\begin{tikzpicture}
+%\begin{axis} [
+%scale only axis,
+%grid=major,
+%axis lines=middle,
+%inner axis line style={->},
+%xmin=-1, xmax=6,
+%ymin=-1, ymax=4,
+%xlabel = t,
+%ylabel = x,
+%ticks=none,
+%grid=none,
+%]
+%\addplot[mark=none] coordinates {(1,1) (1,3) (5,3) (5,1) (1,1)};
+%\addplot[mark=*] coordinates {(3,2)} node[anchor=south] {$(t_0, p)$};
+%\addplot[mark=none] coordinates {(4,0) (2,4)} node[anchor=north] {$-M$};
+%\addplot[mark=none] coordinates {(2,0) (4,4)} node[anchor=north] {$M$};
+%\addplot[mark=none, dashed] coordinates {(3.5, 0) (3.5, 3)};
+%\addplot[mark=none, dashed] coordinates {(2.5, 0) (2.5, 3)};
+%\addplot[mark=none] coordinates {(3.25, 0.75)} node {$h$};
+%\addplot[mark=none] coordinates {(2.75, 0.75)} node {$h$};
+%\addplot[->] coordinates {(3.05, 0.5) (3.5, 0.5)};
+%\addplot[->] coordinates {(2.95, 0.5) (2.5, 0.5)};
+%\end{axis}
+%\end{tikzpicture}
+%\end{figure}
+
+Define $h := \min(r, \frac{s}{M}) > 0$
+
+\section{First Order Scalar Ordinary Differential Equations}
+
+\subsection{Seperable Linear Equations}
+\textbf{Multiplicatively seperable functions} are those of the format $F(t, x) = f(t)g(x)$, such that \textbf{Seperable ODEs} are those of the form, $x'(t) = f(t)g(x)$.
+
+For any function in regular standard form, a vector field can be drawn with t on the x-axis and x(t) on the y-axis, such that there is a grid of vectors, with the slope of the unknown function drawn at each point, allowing the trajectory from each initial point to be drawn.
+
+Thus, for a seperable differential equation, it can be drawn at any point on the x-axis, such that g(x) is the single slope function at that t.
+
+First, we can divide by g(x), such that $f(t) = \frac{x'(t)}{g(x(t))}$, assuming that g(x(t)) is non-zero within some region, I. We thenintegrate with respect to some variable, $\tau$, such that $\int^t_a \frac{x'(\tau)}{g(x(\tau))}d\tau = \int^t_a f(\tau)d\tau$, leaving it in terms of the integral in case it is some nonstandard function, such that it cannot be differentiated precisely. Then, we let $u = x(\tau)$, such that $\int^{x(t)}_{x(a)} \frac{du}{g(u} = \int^t_a f(\tau)d\tau = F(t)$. Then, F'(t) = f(t) and G(x(t)) = F(t) + c by the Fundemental Theorem of Calculus, where $c \in \mathbb{R}$ (some constant). Thus, x(t) = $G^{-1}(F(t) + c)$.
 
 \end{document}
