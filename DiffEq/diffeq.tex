@@ -45,6 +45,8 @@
 %}
 
 \newcommand{\realn}{\mathbb{R}^n}
+\newcommand{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\grad}{\vec{\nabla}}
 
 \begin{document}
 
@@ -89,8 +91,7 @@ For some identically restricted, coupled functions, $$R' = aR + bJ, J' = bR + aJ
 
 This is a form of phase plane analysis, finding the long term behavior, rather than a particular solution, used in cases where the specific solution cannot be found. Algorithms can also be used to approximate the solution at specific points.
 
-\section{Basic Existance and Uniqueness Theorems}
-
+\section{Basic Existence and Uniqueness Theorems}
 \subsection{Flow Theorem}
 \subsubsection{Theorem} 
 Let $\vec{F}(\vec{x}) = (F_1(\vec{x}), F_2(\vec{x}), \dots, F_n(\vec{x}))$ be a vector field (the assignment of a vector to each point within some subset of space) defined on some closed, bounded region D in $\realn$. Also assume $\vec{F}$ is $C^1$ and let $\vec{p}$ be a specific point interior to D. Then $\exists$ a function $\vec{\sigma}(t)$ from some time interval t, $(-\epsilon, \epsilon)$ with $\epsilon > 0$ into D, such that $\vec{\sigma}(0) = \vec{p}$ and $\vec{\sigma}'(t) = \vec{F}(\vec{\sigma}(t)).$
@@ -103,6 +104,8 @@ This can easily be extended to higher derivatives, such that it is written as a 
 
 \subsubsection{Application}
 For some nth-order differential equation, $f(t)x^{(n)} = F(t, x, x', x'', \dots, x^{(n-1)})$, written in \textbf{singular standard form}, assuming there is no singularity (value at which $f(t_0)$ = 0, such that the equation becomes algebraic at that point), and f(t) is continuous, such that it is of constant sign by the Intermediate Value Theorem on the interval, we divide by f(t) to put the equation explicitly equal to the nth derivative term, called the \textbf{regular standard form case}. It must also be an initial value problem, such that initial values for each derivative and the function, x(t), itself, are given for some initial time, $t_0$. It should be noted that t and x can be vectors/vector-valued functions as well, and this would still be valid.
+
+The process of creating a system of lower order equations from a higher order differential equation, given initial values, is called an initial value problem (IVP).
 
 \underline{Theorem:} There is a unique solution, $\sigma = x(t)$ defined in some time interval $(t_0 - \epsilon, t_0 + \epsilon)$, where $\epsilon > 0$.
 
@@ -130,14 +133,7 @@ vector function $\vec{x}' = \vec{F}(\vec{x})$. Now we need the initial
 condition, let $\vec{x}(0) = \vec{p}$.
 
 First let us take the difference between two values of $A$:
-%\begin{align*}
-%\left|A(x_1, y_1) - A(x_2, y_2)\right| &= \left|A(x_1, y_1) - A(x_1, y_2) +
-%A(x_1, y_2) - A(x_2, y_2)\right|\\
-%&\leq \left|A(x_1, y_1) - A(x_1, y_2)\right| + \left|A(x_1, y_2) - A(x_2,
-%y_2)\right|\\
-%&\leq \left|\pfrac{A}{y} (x_1, y^*)(y_1 - y_2)\right| + \left|\pfrac{A}{x}
-%(x^*, y_2)(x_1 - x_2)\right|\\
-%\end{align*}
+$|A(x_1, y_1) - A(x_2, y_2)| = |A(x_1, y_1) - A(x_1, y_2) + A(x_1, y_2) - A(x_2, y_2)| \leq |A(x_1, y_1) - A(x_1, y_2)| + |A(x_1, y_2) - A(x_2, y_2)| \leq |\pfrac{A}{y} (x_1, y^*)(y_1 - y_2)| + |\pfrac{A}{x} (x^*, y_2)(x_1 - x_2)|$
 
 where $x^*$ is some $x$ between $x_1$ and $x_2$, and $y^*$ is some $y$ between
 $y_1$ and $y_2$.
@@ -194,14 +190,24 @@ The initial point $(p, q)$ is assumed to be on the \textit{interior} of $D$. So 
 
 Define $h := \min(r, \frac{s}{M}) > 0$
 
-\section{First Order Scalar Ordinary Differential Equations}
+\subsection{Uniqueness/Existence for $C^1$ IVPs}
+\subsubsection{Theorem}
+First order IVPs are expressed in standard form as x' = F(t, x), $x(t_0) = x_0$, where it is assumed that F is a $C^1$ function on a domain of a rectangle centered around the initial point.
 
-\subsection{Seperable Linear Equations}
+Thus, the theorem states that if $\phi(t), \omega(t)$ are solutions of the IVP defined on intervals $I_\delta = (t_0 - \delta, t_0 + \delta)$ and $I_\epsilon = (t_0 - \epsilon, t_0 + \epsilon)$, where $\delta, \epsilon > 0$. Then, $\phi(t) \equiv$ (equivilance at all points operator, rather than in a particular case) $\omega(t)$ for all $t \in I_n = (t_0 - n, t_0 + n)$, where n > 0.
+
+On the other hand, it must be noted that non-$C^1$ functions cannot be assumed to have a unique solution.
+
+\subsubsection{Proof}
+%Add Proof Here
+
+\section{First Order Scalar Ordinary Differential Equations}
+\subsection{Separable Linear Equations}
 \textbf{Multiplicatively seperable functions} are those of the format $F(t, x) = f(t)g(x)$, such that \textbf{Seperable ODEs} are those of the form, $x'(t) = f(t)g(x)$.
 
 For any function in regular standard form, a vector field can be drawn with t on the x-axis and x(t) on the y-axis, such that there is a grid of vectors, with the slope of the unknown function drawn at each point, allowing the trajectory from each initial point to be drawn.
 
-Thus, for a seperable differential equation, it can be drawn at any point on the x-axis, such that g(x) is the single slope function at that t.
+Thus, for a separable differential equation, it can be drawn at any point on the x-axis, such that g(x) is the single slope function at that t.
 
 First, we can divide by g(x), such that $f(t) = \frac{x'(t)}{g(x(t))}$, assuming that g(x(t)) is non-zero within some region, I. We thenintegrate with respect to some variable, $\tau$, such that $\int^t_a \frac{x'(\tau)}{g(x(\tau))}d\tau = \int^t_a f(\tau)d\tau$, leaving it in terms of the integral in case it is some nonstandard function, such that it cannot be differentiated precisely. Then, we let $u = x(\tau)$, such that $\int^{x(t)}_{x(a)} \frac{du}{g(u} = \int^t_a f(\tau)d\tau = F(t)$. In addition, $\int^v_{x(a)} \frac{1}{g(u)}du = G(v)$. Then, F'(t) = f(t) and G(x(t)) = F(t) + c by the Fundemental Theorem of Calculus, where $c \in \mathbb{R}$ (some constant). Thus, x(t) = $G^{-1}(F(t) + c)$.
 

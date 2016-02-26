@@ -1,10 +1,13 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Definitions}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Example}{section.1}% 3
-\BOOKMARK [1][-]{section.2}{Basic Existance and Uniqueness Theorems}{}% 4
+\BOOKMARK [1][-]{section.2}{Basic Existence and Uniqueness Theorems}{}% 4
 \BOOKMARK [2][-]{subsection.2.1}{Flow Theorem}{section.2}% 5
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Theorem}{subsection.2.1}% 6
 \BOOKMARK [3][-]{subsubsection.2.1.2}{Application}{subsection.2.1}% 7
 \BOOKMARK [3][-]{subsubsection.2.1.3}{Proof}{subsection.2.1}% 8
-\BOOKMARK [1][-]{section.3}{First Order Scalar Ordinary Differential Equations}{}% 9
-\BOOKMARK [2][-]{subsection.3.1}{Seperable Linear Equations}{section.3}% 10
+\BOOKMARK [2][-]{subsection.2.2}{Uniqueness/Existence for C1 IVPs}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Theorem}{subsection.2.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Proof}{subsection.2.2}% 11
+\BOOKMARK [1][-]{section.3}{First Order Scalar Ordinary Differential Equations}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Seperable Linear Equations}{section.3}% 13
