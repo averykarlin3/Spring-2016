@@ -19,6 +19,8 @@
 \contentsline {subsection}{\numberline {2.4}Citizens, Society, and the State}{15}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Political Institutions}{17}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}Linkage Institutions}{17}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Government Branches}{19}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2}Government Branches}{20}{subsubsection.2.5.2}
 \contentsline {subsection}{\numberline {2.6}Public Policy}{21}{subsection.2.6}
-\contentsline {section}{\numberline {3}Articles}{22}{section.3}
+\contentsline {section}{\numberline {3}Chapter 3 - The European Union}{23}{section.3}
+\contentsline {subsection}{\numberline {3.1}Supranationalism}{23}{subsection.3.1}
+\contentsline {section}{\numberline {4}Articles}{23}{section.4}
