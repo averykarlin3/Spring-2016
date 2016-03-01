@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  27 FEB 2016 13:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  1 MAR 2016 00:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1066,34 +1066,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+[21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
  (./gov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
 Package rerunfilecheck Info: File `gov.out' has not changed.
-(rerunfilecheck)             Checksum: 0A95B6B3652742EDAE1000511DFEBBC0;1564.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
+(rerunfilecheck)             Checksum: CF66947A5EE2005B67CAB5C5D1E20B96;1786.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 501.
  ) 
 Here is how much of TeX's memory you used:
- 16102 strings out of 495028
- 274465 string characters out of 6181497
- 344235 words of memory out of 5000000
- 18672 multiletter control sequences out of 15000+600000
- 11352 words of font info for 43 fonts, out of 8000000 for 9000
+ 16195 strings out of 495028
+ 275262 string characters out of 6181497
+ 344233 words of memory out of 5000000
+ 18676 multiletter control sequences out of 15000+600000
+ 11693 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,11n,55p,413b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on gov.pdf (18 pages, 142225 bytes).
+ </home/averykarlin/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on gov.pdf (22 pages, 158826 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 573 compressed objects within 6 object streams
- 330 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 418 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
