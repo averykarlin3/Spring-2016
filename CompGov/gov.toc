@@ -25,4 +25,4 @@
 \contentsline {subsection}{\numberline {3.1}Supranationalism}{23}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Creation and Organization}{23}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Policy}{24}{subsection.3.3}
-\contentsline {section}{\numberline {4}Articles}{25}{section.4}
+\contentsline {section}{\numberline {4}Articles}{26}{section.4}
