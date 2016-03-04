@@ -91,6 +91,9 @@ For some identically restricted, coupled functions, $$R' = aR + bJ, J' = bR + aJ
 
 This is a form of phase plane analysis, finding the long term behavior, rather than a particular solution, used in cases where the specific solution cannot be found. Algorithms can also be used to approximate the solution at specific points.
 
+\section{Mathematical Concepts}
+\subsection{Sup-norms}
+%Add Sup-Norm
 \section{Basic Existence and Uniqueness Theorems}
 \subsection{Flow Theorem}
 \subsubsection{Theorem} 
@@ -190,7 +193,7 @@ The initial point $(p, q)$ is assumed to be on the \textit{interior} of $D$. So 
 
 Define $h := \min(r, \frac{s}{M}) > 0$
 
-\subsection{Uniqueness/Existence for $C^1$ IVPs}
+\subsection{Uniqueness for $C^1$ IVPs}
 \subsubsection{Theorem}
 First order IVPs are expressed in standard form as x' = F(t, x), $x(t_0) = x_0$, where it is assumed that F is a $C^1$ function on a domain of a rectangle centered around the initial point.
 
@@ -200,6 +203,14 @@ On the other hand, it must be noted that non-$C^1$ functions cannot be assumed t
 
 \subsubsection{Proof}
 %Add Proof Here
+\subsection{Existence for $C^1$ IVPs}
+\subsubsection{Theorem}
+If we have some first order IVP, F(t, x(t)), assumed to be $C^1$ within some rectangle R, we can rewrite it as an integral equation, $x(t) = x_0 + \int^t_{t_0} F(\tau, x(\tau))d\tau$, after which we use the \textbf{Picard Method} to prove that a solution exists.
+
+\subsubsection{Picard Method}
+We define a sequence of functions, such that $x_{n+1}(t) = x_0 + \int_{t_0}^t F(\tau, x_n(\tau))d\tau$, but we need a base case. Since the singular solution is known to exist ($x_0(t) \equiv x_0$), we use the function $x_0$ as the base case. 
+
+
 
 \section{First Order Scalar Ordinary Differential Equations}
 \subsection{Separable Linear Equations}
