@@ -116,6 +116,7 @@
 \1 Dipole moments are created by two point charges of opposite charge, seperated by some distance
 \2 Dipole moment $(P) = qr$, where r is the distance between them, and q is the charge of each point, for cases where the charges are of equal, but opposite charge, moving from negative to positive
 \2 Thus, $\tau = P x E$ and $PE = -E \cdot P$ for dipole moments
+\2 $E_{dipole} = \frac{kP}{r^3}$
 \end{outline*}
 \subsection{Solid Bodies}
 \begin{outline*}
@@ -141,5 +142,17 @@
 \2 Gaussian surfaces must be closed (compact/effectively-continuous without boundary in any direction), 3D surfaces, such that they are the boundary of a 3D region with a constant field throughout (symmetrical)
 \2 The electric field must also be parallel to the normal of the tangent plane, $A_N$, on the surface A
 \2 $\Phi_e = \oint \vec{E} dA = \vec{E} \oint dA = \frac{kq_{enc}}{r^2} (4\pi r^2) = \frac{q_{enc}}{\epsilon_0}$, where $q_{enc}$ is the charge of the body inside the surface creating the field, and the surface integral of dA is the surface area
+\1 This is used to derive the field of a sheet of charge, by creating a cylinder in the center around some area of the sheet of some height, thus calculating the field of the section of the sheet
+\1 For varying charge density, $q_{enc} = \int \rho dV$ is substituted in, where dV can be converted to cartesian, cylindrical, or spherical depending
+\end{outline*}
+\section{Chapter 24 - Electric Potential}
+\begin{outline*}
+\1 Electric potential energy can be defined in a system from infinity as a reference as the negative work done to move a particle from infinity towards some stationary second charge ($U_r = -W_{\infty}$)
+\2 Electrostatic force is conservative, and thus path independent
+\2 Electric potential (V) is a quantity not dependent on the particle being moved, such that $V_rq_0 = U$, where $q_0$ is the charge of the moving particle and r is the distance from the stationary particle
+\2 Thus, $V = \int \frac{kdq}{r}$
+\2 $\Delta V$ is called the voltage, and measured in Volts, or J/C
+\1 The work moving a series of charges is equal to the sum of the work to move each charge with respect to the work of the charges moved previously
+\1 By the relationship of potential energy and force, $E = -\vec{\nabla} V(\vec{r})$ or $\Delta V = \int -E \cdot dr$
 \end{outline*}
 \end{document}
