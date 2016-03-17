@@ -29,8 +29,7 @@
 \contentsline {subsection}{\numberline {4.1}Communist and Post-Communist States}{26}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Sovereignty, Authority, and Power}{27}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Political and Economic Change}{28}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Citizens, Society, and the State}{29}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Cleavages}{29}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Political Participation}{30}{subsubsection.4.4.2}
-\contentsline {subsection}{\numberline {4.5}Public Policy}{30}{subsection.4.5}
-\contentsline {section}{\numberline {5}Articles}{30}{section.5}
+\contentsline {subsection}{\numberline {4.4}Citizens, Society, and the State}{30}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Cleavages}{30}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Political Participation}{31}{subsubsection.4.4.2}
+\contentsline {section}{\numberline {5}Articles}{31}{section.5}

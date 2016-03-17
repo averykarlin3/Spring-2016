@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.24)  17 MAR 2016 11:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.24)  17 MAR 2016 11:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1079,36 +1079,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-[26] [27] [28] [29] [30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
+[26] [27] [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+[30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 682.
  [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 682.
  (./gov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 681.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 681.
-Package rerunfilecheck Info: File `gov.out' has not changed.
-(rerunfilecheck)             Checksum: FB3A2D0005BFCC3D5DD567E1A28A5A73;2647.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 681.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 682.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 682.
+
+
+Package rerunfilecheck Warning: File `gov.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gov.out':
+(rerunfilecheck)             Before: FB3A2D0005BFCC3D5DD567E1A28A5A73;2647
+(rerunfilecheck)             After:  634DB345D376E003AE9BB2999880C5E5;2584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 682.
  ) 
 Here is how much of TeX's memory you used:
- 16456 strings out of 495028
- 277864 string characters out of 6181497
+ 16462 strings out of 495028
+ 277912 string characters out of 6181497
  347109 words of memory out of 5000000
  18765 multiletter control sequences out of 15000+600000
  11693 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,11n,55p,413b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/averykarlin/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on gov.pdf (31 pages, 191871 bytes).
+pdfTeX warning (dest): name{subsection.4.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+ </home/averykarlin/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb>
+Output written on gov.pdf (31 pages, 192475 bytes).
 PDF statistics:
- 1054 PDF objects out of 1200 (max. 8388607)
- 1003 compressed objects within 11 object streams
- 589 named destinations out of 1000 (max. 500000)
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 1010 compressed objects within 11 object streams
+ 595 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
