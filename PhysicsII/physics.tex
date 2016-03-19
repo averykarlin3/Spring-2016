@@ -123,20 +123,30 @@
 \1 The electric field ($\vec{E}$) is a vector field, or a function of vectors at each point on the cartesian grid, allowing a measurement of the influence of a particle on any other particle at that point
 \2 It is related to the number of field lines per unit area, such that lines are drawn from positive to negative
 \2 Electric fields are found by measuring the force on a positive test charge with a small enough size that it doesn't disrupt the surrounding field, though it is noted that fields exist independently of the test charge
-\2 $\vec{E} = \frac{\vec{F}}{q_0} = \frac{k|q|}{r^2}$, where the direction is determined by the type of charge, where $q_0$ is the test charge, and q is the charge of the point mass producing the field
+\1 $\vec{E} = \frac{\vec{F}}{q_0} = \frac{k|q|}{r^2}$, where the direction is determined by the type of charge, where $q_0$ is the test charge, and q is the charge of the point mass producing the field
 \2 The unit of electric fields is N/C
-\1 Dipole moments are created by two point charges of opposite charge, seperated by some distance
-\2 Dipole moment $(P) = qr$, where r is the distance between them, and q is the charge of each point, for cases where the charges are of equal, but opposite charge, moving from negative to positive
+\2 $\vec{E}_{net} = \sum_i \vec{E}_i$, or the electric field at some point/test charge due to a series of additional charges, such that superposition applies
+\1 Electric dipoles are created by two point charges of equal magnitude, but opposite charge, seperated by some distance
+\2 Dipole moment $(\vec{P}) = qr$, where r is the distance between them, and q is the charge of each point, where the vector goes from negative to positive
+\3 The direction of the dipole is based on the direction of the electric field vectors acting on the point charge for any point on the dipole line
 \2 Thus, $\tau = P x E$ and $PE = -E \cdot P$ for dipole moments
-\2 $E_{dipole} = \frac{kP}{r^3}$
+\2 $E_{dipole} = \frac{kP}{r^3}$, where r is the distance from the center of the dipole, where the point is on the dipole axis as r becomes far greater than the distance between the dipole charges
+\3 On the other hand, E is proportional to $\frac{1}{r^3}$ at all points on the dipole axis, rather than just at a large distance
+\3 This proportionality is due to the charges canceling each other out faster as the distance gets further
+\1 Sparks are due to electrical breakdown as electrons are forced out from atoms as the electrical field gets past the critical value ($E_c$)
+\2 These electrons create blue light when they collide with atoms after being separated from their original atoms
 \end{outline*}
+
 \subsection{Solid Bodies}
 \begin{outline*}
 \1 $\vec{E} = \sum_i \frac{k\Delta q_i}{r_i^2} = \int \frac{k}{r^2}dq$
 \2 $q = \lambda x, q = \sigma A, q = \rho V$ (depending on the dimensions of the solid body)
 \2 If the density functions are non-uniform, the integral is taken to solve for q, with respect to each dimension variable 
-\1 These calculations can be made simpler if one of the dimensions of the field cancels out, but a multiplier of some trig function must be added to the equation to remove that component
-\1 For parallel plates, $\vec{E} = \frac{\sigma}{\epsilon_0}$, such that each plate is half of that value, where $\epsilon_0$ is the permittivity constant of free space, or $8.854 * 10^{-12} C^2/Nm^2$, and $\sigma$ is the charge density of the plates
+\2 These calculations can be made simpler if one of the dimensions of the field cancels out, but a multiplier of some trig function must be added to the equation to remove that component
+\1 For parallel, nonconducting plates, $\vec{E} = \frac{\sigma}{\epsilon_0}$, such that the field from each plate is half of that value
+\2 $\epsilon_0$ is the permittivity constant of free space, or $8.854 * 10^{-12} C^2/Nm^2$, and $\sigma$ is the charge density of the plates
+\2 This is due to all field lines moving in a different direction being canceled, assuming infinitely long parallel plates (or assumed to exist far from the edge of the plate, creating a uniform electric field
+\2 Uniform electric fields are those with the same magnitude and direction at every point
 \end{outline*}
 
 \section{Chapter 23 - Electric Flux}
