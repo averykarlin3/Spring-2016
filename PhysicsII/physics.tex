@@ -121,7 +121,8 @@
 \subsection{Point Charges}
 \begin{outline*}
 \1 The electric field ($\vec{E}$) is a vector field, or a function of vectors at each point on the cartesian grid, allowing a measurement of the influence of a particle on any other particle at that point
-\2 It is related to the number of field lines per unit area, such that lines are drawn from positive to negative
+\2 It is related to the number of field lines per unit area, such that high field line density means a stronger field
+\2 Electric field lines are drawn from positive to negative
 \2 Electric fields are found by measuring the force on a positive test charge with a small enough size that it doesn't disrupt the surrounding field, though it is noted that fields exist independently of the test charge
 \1 $\vec{E} = \frac{\vec{F}}{q_0} = \frac{k|q|}{r^2}$, where the direction is determined by the type of charge, where $q_0$ is the test charge, and q is the charge of the point mass producing the field
 \2 The unit of electric fields is N/C
@@ -154,18 +155,23 @@
 \section{Chapter 23 - Electric Flux}
 \subsection{Electric Flux}
 \begin{outline*}
-\1 Electric flux is the number of electric field lines passing through an area, such that $\Phi_E = \vec{E} \cdot \vec{A}_n = \vec{E}\vec{A}_ncos(\theta)$, where $\vec{A}_n$ is the normal to the surface, perpendicular and with a magnitude equal to the area
+\1 Electric flux is the measure of flow of the field through an area, or the  number of electric field lines passing through an area, such that $\Phi_E = \vec{E} \cdot \vec{A}_n = \vec{E}\vec{A}_ncos(\theta)$, where $\vec{A}_n$ is the normal to the surface, perpendicular and with a magnitude equal to the area
 \2 For an enclosed object, lines entering the surface of the object is negative, outward is positive
-\2 Thus, positive objects have lines entering but not leaving, negative objects have vice versa 
+\2 Thus, positively charged objects have lines leaving but not entering, negative objects have vice versa 
 \1 $\Phi = \vec{E} \cdot \vec{A}_n$ for uniform surfaces
 \2 $\Phi = \lim_{\Delta A_n \to 0} \sum_i \vec{E}_i \cdot \Delta A_n = \oint \vec{E} \cdot dA_n$
+\2 Electric flux is a scalar with $N*m^2$ as the unit
 \end{outline*}
+
 \subsection{Gauss's Law}
 \begin{outline*}
 \1 Gauss’s Law is used to calculate the graviational field at a point, by creating a gaussian surface including that point
-\2 Gaussian surfaces must be closed (compact/effectively-continuous without boundary in any direction), 3D surfaces, such that they are the boundary of a 3D region with a constant field throughout (symmetrical) to minimize calculations
+\2 Gaussian surfaces must be imaginary, closed (compact/effectively-continuous without boundary in any direction), 3D surfaces, with a constant field throughout
+\2 They also must be symmetrical objects to minimize calculations
 \2 The electric field must also be parallel to the normal of the tangent plane, $A_N$, on the surface A
-\2 $\Phi_e = \oint \vec{E} dA = \vec{E} \oint dA = \frac{kq_{enc}}{r^2} (4\pi r^2) = \frac{q_{enc}}{\epsilon_0}$, where $q_{enc}$ is the charge of the body inside the surface creating the field, and the surface integral of dA is the surface area
+\1 Gauss's Law states that $\Phi_e \epsilon_0 = q_{enc}$, where $q_{enc}$ is the charge of the body inside the surface creating the field
+\2 Gauss's Law is able to be derived from Coulumb's Law, such that $\Phi_e = \oint \vec{E} dA = \vec{E} \oint dA = \frac{kq_{enc}}{r^2} (4\pi r^2) = \frac{q_{enc}}{\epsilon_0}$
+\2 By the definition of a surface integral, $\oint dA$ equals the surface area of the Gaussian surface
 \1 This is used to derive the field of a sheet of charge, by creating a cylinder in the center around some area of the sheet of some height, thus calculating the field of the section of the sheet
 \1 For varying charge density, $q_{enc} = \int \rho dV$ is substituted in, where dV can be converted to cartesian, cylindrical, or spherical depending
 \end{outline*}
