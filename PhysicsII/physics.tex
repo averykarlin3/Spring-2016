@@ -53,7 +53,7 @@
 \title{Physics II: Electromagnetism}
 \author{Avery Karlin}
 \date{Spring 2016}
-%\newcommand{\textbook}{}
+\newcommand{\textbook}{Fundementals of Physics by Halliday, Resnick, and Walker}
 \newcommand{\teacher}{Ali}
 
 \maketitle
@@ -61,7 +61,7 @@
 \hypertarget{content}{\tableofcontents}
 \vspace{11pt}
 \noindent
-%\underline{Primary Textbook}: \textbook\\
+\underline{Primary Textbook}: \textbook\\
 \underline{Teacher}: \teacher
 \newpage
 
@@ -82,7 +82,8 @@
 \1 Materials can be divided into conductors, insulators, and semiconductors
 \2 The distance between the atomic radiuses of each of the atoms in the material determine the type, such that the further the distance, the less conductive, making conductors dense
 \2 Conductors have electrons free to move from orbit to orbit, such as metals or impure water
-\3 It is noted that this creates the difference of charged conducting bodies, such that the charges isolate themselves on the edges of the object uniformly dispersed on the outside, unlike insulators which are dispersed evenly throughout
+\3 It is noted that this creates the difference of charged conducting bodies, such that the charges isolate themselves on the outside surface when there is no external field, unlike insulators which are dispersed evenly throughout
+\4 The charges are only uniformly dispersed on the surface of a conducting sphere, while they vary in other conducting bodies, or in conductors with an external field acting on it
 \3 Thus, conducting spheres act as a spherical shell due to all charges on the outer layer
 \3 Superconductors are conductors without any hindrance to movement of elections
 \2 Insulators have a large energy gap ($E_g$), such that the electrons are bound to atoms, unable to jump/move, such as wood, glass, rubber, or pure water
@@ -127,6 +128,7 @@
 \1 $\vec{E} = \frac{\vec{F}}{q_0} = \frac{k|q|}{r^2}$, where the direction is determined by the type of charge, where $q_0$ is the test charge, and q is the charge of the point mass producing the field
 \2 The unit of electric fields is N/C
 \2 $\vec{E}_{net} = \sum_i \vec{E}_i$, or the electric field at some point/test charge due to a series of additional charges, such that superposition applies
+\3 Superposition assumes that the charges remain in the same locations as when calculated individually, when together
 \1 Electric dipoles are created by two point charges of equal magnitude, but opposite charge, seperated by some distance
 \2 Dipole moment $(\vec{P}) = qr$, where r is the distance between them, and q is the charge of each point, where the vector goes from negative to positive
 \3 The direction of the dipole is based on the direction of the electric field vectors acting on the point charge for any point on the dipole line
@@ -150,6 +152,8 @@
 \2 $\epsilon_0$ is the permittivity constant of free space, or $8.854 * 10^{-12} C^2/Nm^2$, and $\sigma$ is the charge density of the plates
 \2 This is due to all field lines moving in a different direction being canceled, assuming infinitely long parallel plates (or assumed to exist far from the edge of the plate, creating a uniform electric field
 \2 Uniform electric fields are those with the same magnitude and direction at every point
+\2 The fact that parallel plates have double the field of a single plate can also be thought to be due to all the charge moving to the edge, such that double the charge is present, rather than split on both edges
+\3 This is not due to superposition, due to the charges when the plates are together, such that it must be calculated when together, rather than the sum of apart
 \end{outline*}
 
 \section{Chapter 23 - Electric Flux}
@@ -174,8 +178,18 @@
 \2 By the definition of a surface integral, $\oint dA$ equals the surface area of the Gaussian surface
 \2 This law only holds true in this form for charges in either a vacuum or air (effect of air is negligible)
 \2 The electric field can be influenced by charges outside the surface, but the charge calculated is only that within the surface, due to outside charges not contributing to the net electric flux of the surface, but rather just adding field lines that pass fully through
-\1 This is used to derive the field of a sheet of charge, by creating a cylinder in the center around some area of the sheet of some height, thus calculating the field of the section of the sheet
+\1 Gauss's Law can be applied to an infinitely long line of charge (or line of charge far from the ends), such that a cylinder can be constructed, since the flux through the top and bottom is parallel, and thus 0, such that the flux through the curved section is counted only
+\2 This is used to derive the field of an infinite (or middle of the) sheet of charge at some distance as well, by creating a cylinder in the center around some area of the sheet of some height, thus the flux of the caps of the cylinder are the only ones used
+\3 This is also used to derive the field between two parallel plates, due to the density doubling by the movement of charges toward the single edge near the center, rather than divided between the two edges when isolated, resulting in the field doubling
+\3 This is also used to calculate the external field outside a conductor with nonuniform charge distribution, due to it being uniform and the surface flat over a tiny area
+\4 On the other hand, it must be a conductor, or the charge would not be isolated in a flat layer on the edge of the surface
+\2 It can also be used for spherical symmetry about some body, allowing the shell charge calculations to be shortened, as well as calculate the field within for nonconducting spheres by the charge enclosed
+\2 Thus, bodies can be created without complete uniform field at the surface, such that the field is parallel to all surfaces that are not uniform, and thus can be not counted
+\2 On the other hand, symmetry cannot be applied to the edges of an object, due to the edge effect/fringing causing the electric field lines to curve
 \1 For varying charge density, $q_{enc} = \int \rho dV$ is substituted in, where dV can be converted to cartesian, cylindrical, or spherical depending
+\1 Gauss's Law is also used to prove that conductors have the charge on the edges, due to if charge existed within, an electric field would, creating a constant internal current which isn't the case
+\2 The same reasoning can be used to show that it is only in the outer surface if there exists a cavity within, rather than the cavity surface as well
+\2 It is also used to show that a conductor works equally to an infinitely thin insulating shell
 \end{outline*}
 \section{Chapter 24 - Electric Potential}
 \begin{outline*}
