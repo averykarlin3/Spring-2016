@@ -199,9 +199,12 @@
 \2 Energy is often measured in electron-volts, such that it is the energy required to move an electron through one volt (1.6 * $10^-19$ J)
 \1 Electric potential (V) is a scalar quantity not dependent on the particle being moved, but rather existing at each point in a field, equal to the potential per unit charge
 \2 Thus, $V_rq_0 = U_0$, where $q_0$ is the test charge, and r is the distance from the other particle
-\2 Thus, $V = \int \frac{kdq}{r}$
+\2 As a result, it can be found that $V = \frac{kq}{r}$ for a field produced by a point charge, such that positive charges produce positive potential and vice versa
+\3 By the superposition principle for potential energy, the potential at some point due to a group of charges is found by $V = \sum_i \frac{kq_i}{r}$
 \1 $\Delta V$ is the electric potential difference, also called the voltage, and measured in Volts, or J/C
-\2 $\Delta V = \frac{\Delta U}{q} = \frac{-W}{q}$, allowing it to be calculated by the movement of a particle in an external field, as well as a system of point charges
+\2 $\Delta V = \frac{\Delta U}{q} = \frac{-W}{q}$, such that it can be calculated for point charge systems by the work done
+\2 By extension, $\Delta V = \frac{-\int^f_i \vec{F}\cdot d\vec{s}}{q} = -\int^f_i \vec{E} \cdot d\vec{s}$, allowing it to be calculated by the movement of a particle in both an external field and a system of particles
+\3 In the external field, the initial point can be thought to be the point of zero potential, such that $\Delta V = V_f$
 \1 The work moving a series of charges is equal to the sum of the work to move each charge with respect to the work of the charges moved previously
 \1 By the relationship of potential energy and force, $E = -\vec{\nabla} V(\vec{r})$ or $\Delta V = \int -E \cdot dr$
 \2 As a result, since $V(\infty) = 0, V(r) = \int^r_\infty -E \cdot dr$
@@ -209,5 +212,6 @@
 \2 This function to find V is commonly used for symmetrical objects by which Gauss's Law can be applied, while the defining function is more commonly used for non-symmetrical ones
 \1 Equipotential regions/points are those where the electric potential is equal, either a real or imaginary surface/region/points
 \2 By extension, points are equipotential if the work done moving a charge from one to the other is 0, such that either electric field is 0 or the electric field is perpendicular to the movement of the charge
+\2 Equipotential surfaces can be found by the IVT, such that if on a line between two points, the value moves past the desired potential, there must be some point such that it is equipotential
 \end{outline*}
 \end{document}
