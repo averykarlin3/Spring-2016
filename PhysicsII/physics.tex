@@ -242,12 +242,17 @@
 \2 Switches are used to prevent current, by disconnecting the high and low potential of the battery, such that the charges are static when open until it is closed
 \2 When the circuit is completed, equal magnitudes of charge are produced on both sides of the capacitor by the electric field created by the battery, until the potential of each capacitor plate is equal to that created by the battery
 \3 It is generally assumed that charge cannot move through the capacitor, such that it cannot discharge unless the circuit has a mechanism to connect the plates
+\3 Realistically, the battery does not bring the charges to the plates through the whole circuit, but rather forces charges to move from within the plate to the edges, only moving those closest to the edge to begin with
 \1 For a parallel plate capacitor, $C = \frac{q}{Ed}$, where d is the distance between the plates, such that q can be found by Gauss's Law for some Gaussian cylinder such that the top field is equal to the uniform field within the plates
 \2 Thus, $C = \frac{\epsilon_0EA}{Ed} = \frac{\epsilon_0A}{d}$
 \2 Cylindrical capacitors can have the Gaussian surface constructed around the inner cylinder, such that $E = \frac{q}{\epsilon_02\pi rL}$, where L is the height of the cylinder, varying with r
 \3 Thus, $V = \int^b_a Edr$, where a is the radius of the inner, b is the radius of the outer, such that $C = \frac{2\pi\epsilon_0L}{ln(b/a)}$
 \2 Spherical capacitors similarly have $E = \frac{q}{4\pi\epsilon_0r^2}$, such that an integral is similarly found for V, to get $C = \frac{4\pi\epsilon_0ab}{b-a}$, where b is the outer radius, a is the inner
 \3 A single sphere has a capacitance, where the outer sphere has an infinite radius, approximated by some object in which the field lines end, such as walls, such that $C = 4\pi\epsilon_0R$, where R is the radius of the inner sphere
+\1 Combinations of capacitors in circuits can be replaced by an equivalent capacitor to simplify it
+\2 In parallel, since the voltage of each is the same, the charge of the equivalent capacitor is equal to the sum of the individual charges
+\3 The equivalent capacitance is also equal to the sum of the individual capacitance
+\2 In series, 
 \end{outline*}
 
 \section{Chapter 26 - Current and Resistance}
@@ -265,6 +270,9 @@
 \2 In cases where it would change the effect of the current, this convention is not used
 \1 Charge density is the charge per unit area in the cross section, as a vector with the same direction as the current, such that $I = \int \vec{J} \cdot d\vec{A}$, where $\vec{A}$ is the normal of the area
 \2 Charge density can be represented by streamlines, such that the spacing between the lines/the density of the lines represents the charge density at the cross-section
+\1 Drift velocity is the velocity of the electrons in the direction of the current, minute compared to the random motion of the charges in both conductors with and without current ($10^{-5}$ m/s, rather than $10^6$)
+\2 This is also vastly slower than the speed of the current itself, often closer to $10^9$, the result of the slight random motion net movement in the direction of the current
+\2 
 \end{outline*}
 
 \subsection{Resistance}
