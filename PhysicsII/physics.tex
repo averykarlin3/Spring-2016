@@ -86,6 +86,9 @@
 \4 The charges are only uniformly dispersed on the surface of a conducting sphere, while they vary in other conducting bodies, or in conductors with an external field acting on it
 \4 In non-spherical conductors, the charge tends to condense near sharp edges and points, increasing the electric field around it, causing ionization of the air around, called a corona discharge, and often leading to a lightening strike by creating a high voltage
 \4 This is also the reason why during lightening strikes, it is suggested to go inside spherical conductors
+\4 Thus, spherical conductors also have constant potential within, due to having no internal electric field
+\3 For conductors in an external field, since there is no constant current within, the charges must reorganize themselves such that there is still no electric field inside, due to the charges counteracting it
+\4 By extension, all conductors in an external field have a constant electric potential within
 \3 Thus, conducting spheres act as a spherical shell due to all charges on the outer layer
 \3 Superconductors are conductors without any hindrance to movement of elections
 \2 Insulators have a large energy gap ($E_g$), such that the electrons are bound to atoms, unable to jump/move, such as wood, glass, rubber, or pure water
@@ -225,4 +228,71 @@
 \2 By extension, points are equipotential if the work done moving a charge from one to the other is 0, such that either electric field is 0 or the electric field is perpendicular to the movement of the charge
 \2 Equipotential surfaces can be found by the IVT, such that if on a line between two points, the value moves past the desired potential, there must be some point such that it is equipotential
 \end{outline*}
+
+\section{Chapter 25 - Capacitance}
+\begin{outline*}
+\1 Capacitors are devices which can store electrical energy, made up of two conductor plates, represented by -$\|$- in a circuit schematic, conventionally in the form of a parallel plate capacitor
+\2 Fully charged capacitors have both plates of equal charge, but opposite sign, with some region between the plates creating a field within, such that there is a voltage present, represented as V, rather than $\Delta V$ by convention
+\3 The plates must be conductors, such that they are equipotential surfaces, creating parallel potential gradient
+\2 Capacitance is the proportionality constant between the fully charged charge of each plate and the voltage, such that q = CV, where q is the charge of each plate
+\3 Capacitance is measured in Farads, or C/V
+\1 Capacitors are charged by the creation of an electric circuit, or a path allowing the flow of charge, with a battery to produce a specific electric potential between the terminals
+\2 The terminals are the locations of the battery where charge can leave and enter into the circuit, but not directly to the other terminal
+\2 Batteries are represented as a capacitor, with the terminal of higher potential as a longer line, and positive, and the terminal of lower potential as a shorter line, negative
+\2 Switches are used to prevent current, by disconnecting the high and low potential of the battery, such that the charges are static when open until it is closed
+\2 When the circuit is completed, equal magnitudes of charge are produced on both sides of the capacitor by the electric field created by the battery, until the potential of each capacitor plate is equal to that created by the battery
+\3 It is generally assumed that charge cannot move through the capacitor, such that it cannot discharge unless the circuit has a mechanism to connect the plates
+\3 Realistically, the battery does not bring the charges to the plates through the whole circuit, but rather forces charges to move from within the plate to the edges, only moving those closest to the edge to begin with
+\1 For a parallel plate capacitor, $C = \frac{q}{Ed}$, where d is the distance between the plates, such that q can be found by Gauss's Law for some Gaussian cylinder such that the top field is equal to the uniform field within the plates
+\2 Thus, $C = \frac{\epsilon_0EA}{Ed} = \frac{\epsilon_0A}{d}$
+\2 Cylindrical capacitors can have the Gaussian surface constructed around the inner cylinder, such that $E = \frac{q}{\epsilon_02\pi rL}$, where L is the height of the cylinder, varying with r
+\3 Thus, $V = \int^b_a Edr$, where a is the radius of the inner, b is the radius of the outer, such that $C = \frac{2\pi\epsilon_0L}{ln(b/a)}$
+\2 Spherical capacitors similarly have $E = \frac{q}{4\pi\epsilon_0r^2}$, such that an integral is similarly found for V, to get $C = \frac{4\pi\epsilon_0ab}{b-a}$, where b is the outer radius, a is the inner
+\3 A single sphere has a capacitance, where the outer sphere has an infinite radius, approximated by some object in which the field lines end, such as walls, such that $C = 4\pi\epsilon_0R$, where R is the radius of the inner sphere
+\1 Combinations of capacitors in circuits can be replaced by an equivalent capacitor to simplify it
+\2 In parallel, since the voltage of each is the same, the charge of the equivalent capacitor is equal to the sum of the individual charges
+\3 The equivalent capacitance is also equal to the sum of the individual capacitance
+\2 In series, 
+\end{outline*}
+
+\section{Chapter 26 - Current and Resistance}
+\subsection{Current}
+\begin{outline*}
+\1 Electric currents are moving charges, such that there is a net flow of charge through the surface, considered a scalar quantity, though often an arrow is added to show the general direction of current flow
+\2 As a result, the random movement of charge in electrons within a conductor without internal potential difference or the flow of neutral molecules are not considered currents
+\3 It is noted that questions which ask specifically for the current of negative or positive charge among a neutral molecule flow ignore the lack of net charge flow
+\2 Currents are generally assumed to be steady (not varying with time) movements of conduction electrons in metallic conductors, where there is assumed to be no resistance in the wire themselves
+\3 Due to conductors having equal potential within, a battery must be added to create a forced potential, creating a current within
+\2 Currents are measured in Amperes (A)
+\2 $I = \frac{dq}{dt}$
+\1 Due to conservation of charge, current is the same for any cross-section within the conductor
+\1 The direction of current is drawn as the movement of positive charges, although the actual flow of charges is negative, in the opposite direction, due to the effect generally assumed to be the same
+\2 In cases where it would change the effect of the current, this convention is not used
+\1 Charge density is the charge per unit area in the cross section, as a vector with the same direction as the current, such that $I = \int \vec{J} \cdot d\vec{A}$, where $\vec{A}$ is the normal of the area
+\2 Charge density can be represented by streamlines, such that the spacing between the lines/the density of the lines represents the charge density at the cross-section
+\1 Drift velocity is the velocity of the electrons in the direction of the current, minute compared to the random motion of the charges in both conductors with and without current ($10^{-5}$ m/s, rather than $10^6$)
+\2 This is also vastly slower than the speed of the current itself, often closer to $10^9$, the result of the slight random motion net movement in the direction of the current
+\2 
+\end{outline*}
+
+\subsection{Resistance}
+\begin{outline*}
+
+\end{outline*}
+
+\section{Chapter 27 - Circuits}
+\begin{outline*}
+\1 Circuits can be powered either by a charged capacitor or a charge pump, the former temporarily until it discharges, the latter an object which produces a steady current by maintaining a voltage
+\2 Charge pumps are also called emf devices, producing an emf, or electromotive force, often in the form of a battery and electric generator, or less commonly in the form of solar, fuel cells, thermophiles, or biological generators
+\2 EMF is represented as an arrow from the positive to negative terminals of the device, with internal chemistry in the device to create current unless a circuit joins the terminals
+\2 The EMF device forces charges in the EMF direction within the battery to create a constant potential, converting some other form of energy to produce the electrical energy, such as mechanical energy in generators
+\2 $EMF = \frac{dW}{dq}$, or the work that must be done on each charge by the device to move a unit positive charge to the high voltage terminal, measured in V
+\3 This is due to the need for the battery to move an equal amount of charge that is traveling in any given amount of time through a cross-section of the circuit, through the battery
+\2 These EMF devices produce electrical energy, providing the energy to allow the movement of charges as current, allowing it to be used in other devices and converted/used as other forms of energy
+\1 Ideal EMF devices are those without any internal resistance on the circuit, such that the voltage of the battery is equal to the emf
+\2 Real EMF devices are those with internal resistance in the battery, such that when not connected, the voltage is equal to the emf, but when connected to the circuit, is not equal
+\1 Current in a single-loop circuit can be calculated either by conservation of energy, or by potential
+\2 
+\end{outline*}
+
 \end{document}
