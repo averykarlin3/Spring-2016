@@ -249,10 +249,19 @@
 \3 Thus, $V = \int^b_a Edr$, where a is the radius of the inner, b is the radius of the outer, such that $C = \frac{2\pi\epsilon_0L}{ln(b/a)}$
 \2 Spherical capacitors similarly have $E = \frac{q}{4\pi\epsilon_0r^2}$, such that an integral is similarly found for V, to get $C = \frac{4\pi\epsilon_0ab}{b-a}$, where b is the outer radius, a is the inner
 \3 A single sphere has a capacitance, where the outer sphere has an infinite radius, approximated by some object in which the field lines end, such as walls, such that $C = 4\pi\epsilon_0R$, where R is the radius of the inner sphere
-\1 Combinations of capacitors in circuits can be replaced by an equivalent capacitor to simplify it
+\4 People can be similarly modeled as a spherical capacitor, allowing the maximum potential able to be achieved to be calculated, provided generally by friction charging
+\1 Combinations of capacitors in circuits can be replaced by an equivalent capacitor to simplify
 \2 In parallel, since the voltage of each is the same, the charge of the equivalent capacitor is equal to the sum of the individual charges
 \3 The equivalent capacitance is also equal to the sum of the individual capacitance
-\2 In series, 
+\2 In series, the charge of each capacitor is the same, while the equivalent voltage is equal to the sum of the individuals, such that $\frac{1}{C_1} + \frac{1}{C_2} = \frac{1}{C_{eq}}$
+\3 Each capacitor gains the same charge, due to each one filling to produce the same potential as the battery, acting as the battery for the next one, such that the battery only directly acts on the first
+\4 This can be thought of as the battery only providing charges for the first, though technically, it only moves those there as well
+\3 As a result, the equivalent capacitance is less than all of the individual capacitance in the series
+\1 It requires work to charge a capacitor, creating the electric field within the capacitor, stored as potential energy within, such that $U = W = \int^q_0 Vdq = \frac{1}{C} \int^q_0 qdq = \frac{q^2}{2C} = \frac{1}{2}CV^2$
+\2 Thus, the potential energy can be thought to be stored within the electric field of the capacitor plates
+\2 Parallel plate capacitors have a uniform field, such that the energy density, or potential energy per unit volume is uniform as well
+\3 Thus, $u = \frac{U}{Ad} = \frac{CV^2}{2Ad} = \frac{1}{2}\epsilon_0(\frac{V}{d})^2 = \frac{1}{2}\epsilon_0E^2$
+\3 
 \end{outline*}
 
 \section{Chapter 26 - Current and Resistance}
