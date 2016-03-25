@@ -90,7 +90,9 @@
 \3 For conductors in an external field, since there is no constant current within, the charges must reorganize themselves such that there is still no electric field inside, due to the charges counteracting it
 \4 By extension, all conductors in an external field have a constant electric potential within
 \3 Thus, conducting spheres act as a spherical shell due to all charges on the outer layer
-\3 Superconductors are conductors without any hindrance to movement of elections
+\3 Superconductors are conductors without any hindrance to movement of elections, such that there is no resistance
+\4 Superconductivity is found at low temperatures, varying based on the material, with no relationship between conductivity and superconductivity, such that some conductors cannot become superconductors at any temperature, and some insulators easily are
+\4 Within the last 40 years, higher temperature superconductors have been discovered as well, hurting attempts to develop theories of superconductors
 \2 Insulators have a large energy gap ($E_g$), such that the electrons are bound to atoms, unable to jump/move, such as wood, glass, rubber, or pure water
 \2 Semiconductors are not free or bound, such that they can be converted to either a conductor or insulator, such as silicon or germanium
 \3 Adding impurities to the material through doping allows electrons to jump easier, such that it conducts better
@@ -230,6 +232,7 @@
 \end{outline*}
 
 \section{Chapter 25 - Capacitance}
+\subsection{Capacitors}
 \begin{outline*}
 \1 Capacitors are devices which can store electrical energy, made up of two conductor plates, represented by -$\|$- in a circuit schematic, conventionally in the form of a parallel plate capacitor
 \2 Fully charged capacitors have both plates of equal charge, but opposite sign, with some region between the plates creating a field within, such that there is a voltage present, represented as V, rather than $\Delta V$ by convention
@@ -263,12 +266,26 @@
 \3 Thus, $u = \frac{U}{Ad} = \frac{CV^2}{2Ad} = \frac{1}{2}\epsilon_0(\frac{V}{d})^2 = \frac{1}{2}\epsilon_0E^2$
 \3 While this is most significant and derived in the case of a parallel plate capacitor, it allows any point within an electric field to be viewed as a storage of potential energy within a volume
 \3 Thus, $u = \frac{1}{2}\epsilon_0E^2$ for all points in an electric field
+\end{outline*}
+\subsection{Dielectrics}
+\begin{outline*}
 \1 Dielectric are insulating materials, which increase the capacitance of the capacitor in which they are placed by the dielectric constant, k
-\2 The dielectric constant of air is ~1, while the constant of a vacuum is exactly 1
-\2 Dielectric materials also create a maximum voltage, $V_{max}$, called the breakdown potential, in each capacitor, at which point the dielectric breaks down and becomes a conductor
-\3 The dielectric strength is the maximum electric field that can be withstood without breakdown, unique for each material
-\2 All electrostatic equations taking place within a dielectric medium also have $\epsilon_0$ replaced with $k\epsilon_0$
-\2 Dielectric mediums work by weakening the electric field, such that if it was charged 
+\1 The dielectric constant of air is ~1, while the constant of a vacuum is exactly 1
+\1 Dielectric materials also create a maximum voltage, $V_{max}$, called the breakdown potential, in each capacitor, at which point the dielectric breaks down and becomes a conductor
+\2 The dielectric strength is the maximum electric field that can be withstood without breakdown, unique for each material
+\1 All electrostatic equations taking place within a dielectric medium also have $\epsilon_0$ replaced with $k\epsilon_0$
+\1 Dielectric mediums work by weakening the electric field, such that if it was charged, changing the voltage and potential energy stored, rather than the charge, converting the excess energy to mechanical energy in the dielectric
+\2 This results in work acting on the movement of the dielectric, done by the field, while being inserted, remaining if there is no friction or external force acting on it
+\1 Dielectrics line up opposed to the electric field, creating a small electric field in the opposite direction to decrease the electric field
+\2 Polar dielectrics orient themselves to do this, while nonpolar ones gain temporary, induced dipole moments
+\1 Gauss's law can be applied similarly, just with modifications due to a dielectric, derived by a parallel plate, either taking into account the added non-free charges within the dielectric, or the changing electric field (not both, due to one resulting from the other)
+\2 Thus, either $\epsilon_0 \oint k\vec{E} \cdot d\vec{A} = q$, where q is purely the free charges, or $\epsilon_0 \oint \vec{E} \cdot d\vec{A} = q - q_{di}$, where $q_{di}$ are the opposite charges attracted to the plate within the dielectric, reducing the electric field
+\3 k can be non-constant throughout the surface of the Gaussian surface, though to easily simplify the integral, it must not be
+\3 $k\epsilon_0\vec{E}$ is also called the electric displacement, or $\vec{D}$
+\2 Thus, $q - q_{di} = \frac{q}{k}$ by the relationship between the two
+\1 Dielectric bodies inserted such that there are regions of differing dielectric constants within the capacitor allow the electric field of each section to be found by Gauss's Law
+\2 The total voltage can be measured as the sum of the individual voltages of each section, proven by integration of electric fields
+\2 Due to the free charges of the plates themselves being constant and the voltage being the sum of the individuals, the capacitance is calculated as if there are multiple capacitors in series
 \end{outline*}
 
 \section{Chapter 26 - Current and Resistance}
@@ -286,16 +303,27 @@
 \2 In cases where it would change the effect of the current, this convention is not used
 \1 Charge density is the charge per unit area in the cross section, as a vector with the same direction as the current, such that $I = \int \vec{J} \cdot d\vec{A}$, where $\vec{A}$ is the normal of the area
 \2 Charge density can be represented by streamlines, such that the spacing between the lines/the density of the lines represents the charge density at the cross-section
-\1 Drift velocity is the velocity of the electrons in the direction of the current, minute compared to the random motion of the charges in both conductors with and without current ($10^{-5}$ m/s, rather than $10^6$)
-\2 This is also vastly slower than the speed of the current itself, often closer to $10^9$, the result of the slight random motion net movement in the direction of the current
-\2 
+\1 Drift velocity is the velocity of the electrons in the direction of the electric field, minute compared to the random motion of the charges in both conductors with and without current ($10^{-5}$ m/s, rather than $10^6$)
+\2 This is the result of the slight random motion net movement in the direction of the field, creating the current
+\2 Since the charge per length L of wire is q = nALe, where A is the wire cross section and n is the number of charges per unit volume, $J = IA$ if J is uniform over the length of wire, and L/t = $v_d$, then $\vec{v}_d = \frac{I}{nAe} = \frac{J}{ne}$ (if J is uniform)
+\3 ne is considered to be the carrier charge density, or charge per unit volume, negative for electrons, such that the direction of $\vec{J}$ and $\vec{v}_d$ are opposite
+\3 By the convention of assuming protons make up charge though, ne is generally assumed to be positive
+\2 On the other hand, changes in the electric field strength throughout the wire are transmitted almost at the speed of light magnitude ($3*10^9$), causing all electrons to begin to drift
+\3 This results in changes in the field causing immediate effects in circuits, such as the closing of a switch
 \end{outline*}
 
 \subsection{Resistance}
 \begin{outline*}
-
+\1 Resistance is the difference in the currents resulting from the same potential in different objects, such that $R = \frac{V}{I}$, where it is measured in ohms ($\Omega$)
+\2 Resistors are conductors, represented by a jagged line, used in a circuit to provide a specific resistance
+\2 Resistance is based on the charge density created in the resistors by a given voltage
+\3 This is due to the fact that greater charge density in a given area results in greater current, such that the resistance is less in that area, based on the object itself, rather than the material
+\1 Resistivity ($\rho$) = $\frac{E}{J}$, is measured from a particular point, not depending on the object of the resistor, but the property of the material itself
+\2 This is the microscopic variation of the macroscopic definition of resistance, using measures that apply to a material/point, rather than an object
+\2 This assumes the material is isotropic, such that the electrical properties of the material are identical in all directions
+\2 As a result, $R = \frac{\rho L}{A}$, allowing resistance and resistivity to be related by the definitions of each, assuming that charge density/electric field and cross section are uniform in a homogeneous, isotropic conductor material
+\2 Similarly, conductivity ($\omega$) = $\frac{1}{\rho}$
 \end{outline*}
-
 \section{Chapter 27 - Circuits}
 \begin{outline*}
 \1 Circuits can be powered either by a charged capacitor or a charge pump, the former temporarily until it discharges, the latter an object which produces a steady current by maintaining a voltage
