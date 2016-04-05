@@ -38,4 +38,6 @@
 \contentsline {subsection}{\numberline {4.6}Public Policy}{36}{subsection.4.6}
 \contentsline {section}{\numberline {5}Chapter 5 - China}{37}{section.5}
 \contentsline {subsection}{\numberline {5.1}Sovereignty, Authority, and Power}{37}{subsection.5.1}
-\contentsline {section}{\numberline {6}Articles}{38}{section.6}
+\contentsline {subsection}{\numberline {5.2}Political and Economic Change}{38}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Citizens, Society, and the State}{39}{subsection.5.3}
+\contentsline {section}{\numberline {6}Articles}{40}{section.6}
