@@ -428,7 +428,7 @@
 \2 It can also be measured for some small section of wire, $d\vec{L}$, such that the total force on the wire is summed, equal to the force on the wire as a whole
 \1 \textbf{//Add 28-9 and 28-10}
 \end{outline*}
-\section{Chapter 29 - Magnetic Fields due to Currents}
+\section{Chapter 29 - Current-Produced Magnetic Fields}
 \begin{outline*}
 \1 Magnetic fields are produced by current within a wire, such that the Biot-Savart Law, experimentally found, states that $d\vec{B} = \frac{\mu_0 Id\vec{s} \times \hat{r}}{4\pi r^2}$
 \2 $d\vec{s}$ is the current carrying length element in the direction of the current, r is the distance to the point at which the field is being determined, and $\hat{r}$ is the unit vector in the direction of r from the wire length element
@@ -443,6 +443,33 @@
 \2 This can be combined with the formula for the force acting on a wire by an external field to find the force acting on a wire by another wire
 \3 Thus, it is shown by the right hand rule that parallel currents attract, antiparallel repel
 \3 1 Ampere is defined as the current in two parallel wires of infinite length, 1 meter apart in a vacuum, such that the force produced is $2*10^{-7}$ N per meter
-\3 
+\3 \textbf{//Finish 29-3} 
+\1 Ampere's Law states that $\oint \vec{B} \cdot d\vec{s} = \mu_0 I_{enc}$, such that the integral is a line integral, taken over some closed/Amperian loop
+\2 The direction of integration along the loop is arbitrarily chosen, such that current direction such that it moves up inside the loop as integration is counterclockwise is positive, current which moves down is negative
+\2 This ignores current outside the loop due to the magnetic field lines both entering and leaving the loop, such that it cancels out
+\2 This is simplified easily for symmetrical magnetic fields, such that $\vec{B}$ is constant throughout the loop, able to be removed from the integral
+\2 Similarly to Gauss's Law, for varying enclosed current density, the total enclosed current can be found by $I_{enc} = \int JdA$
+\2 It is notable that the current inside is equal to the total current passing through the loop, such that it is the sum of each current carrying wire cross-section going through
+\2 Ampere's Law is commonly used to determine the magnetic field produced by a solenoid, or a tightly wound helical coil of current-carrying wire, where the length is assumed to be far greater than the diameter
+\3 Ideal solenoids are assumed to be tightly/close packed and infinitely long, such that the field inside the coil is uniform and parallel to the axis
+\4 In addition, ideal solenoids have the magnetic field outside the solenoid equal to 0
+\4 These features are mainly true if the length far exceeds the diameter (except at the ends)
+\3 The Amperian loop is taken as a rectangle through the wire, such that one side is fully within, one fully without, such that the inside is the only part of the loop whose integral is non-zero
+\4 Further, the current enclosed by the loop is equal to the sum of the individual currents of each wire part passing through the loop, such that $I_{enc} = Inl$, where n is the number of turns per unit length and l is the length of the loop
+\4 Thus, $B = \mu_0In$ for an ideal solenoid, depending only on the number of turns per unit length and the current, such that it can be used easily to create a known uniform magnetic field
+\4 For solenoids with multiple layers as a result, that simply increases the number of turns, since the radius doesn't matter
+\3 Toroids, or hollow coiled wires twisted such that the ends meet, can be determined similarly, through an Amperian circular loop inside the hollow space, such that $B = \mu_0In$
+\4 Thus, $B = \frac{\mu_0IN}{2\pi r}$, where N is the total number of turns and r is the radius to the loop
+\1 \textbf{\\Add 29-6}
+\end{outline*}
+\section{Chapter 30 - Induction}
+\begin{outline*}
+\1 Faraday discovered that the movement of a magnet produces an induced current by providing induced EMF, calling it induction
+\2 It was also discovered then that faster motion produces a greater current
+\3 He also found that moving one pole towards causes one direction of current, moving away the opposite, and the other pole is the opposite directions
+\2 He later discovered that with two conducting loops next to each other, when one connected to a voltage, an induced current in the opposite direction is produced in the other temporarily
+\3 The induced current is only during the change in the current of the first loop
+\1  
+\1 \textbf{Add 30-3 to 30-12}
 \end{outline*}
 \end{document}
