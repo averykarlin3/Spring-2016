@@ -425,16 +425,30 @@
 \3 The pitch of the helix, or distance between adjacent turns, can thus be found as the velocity parallel multiplies by the period of the motion
 \3 Helices where the magnetic field is strong enough at the end that the period is approximately 0, causes the reflection of the particle down the helix, such that if both ends are like that, is called a magnetic bottle
 \2 Mass spectrometers measure the mass of a particle by using a produced voltage to produce the velocity, firing it into a magnetic field, and measuring the radius of the circle revolved around in a uniform magnetic field
-\1 \textbf{Add 28-7}
+\1 Particle accelerators are used to create particle collisions with high energy, easy for electrons due to the small mass, difficult for large particles due to requiring large travel distance
+\2 Cyclotrons use two dees, or semi-circle chambers, with a gap of potential difference between them, and a magnetic field applied to cause circular motion, starting from the center, with the velocity increasing until it moves outside the dee/the magnetic field in a beam
+\3 The electric potential is reversed before each move between the dees, such that it is accelerated each time, with no electric field allowed inside the dees
+\3 This requires a fixed frequency of oscillation to be set equal to the field oscillation as the resonance condition
+\3 The kinetic energy it leaves with in the beam is assumed to be the kinetic energy required to move in circular motion around the full cyclotron for simplicity
+\2 Proton Synchrotrons are used for particles approaching the speed of light (> 0.1c), due to the frequency of revolution no longer being independent of the speed when in a relativistic setting, but rather decreasing as velocity increases
+\3 In addition, as required velocity rises, the size of the magnets and the dees become much larger
+\3 Thus, rather than a constant magnetic field, it uses a varying field and varying oscillator frequency, to produce a purely circular, rather than spiraling path, though it still requires a fairly large magnet, but smaller than a cyclotron would
 \1 Uniform magnetic fields acting on a wire produce a force on the wire itself, due to the electrons within being unable to escape
 \2 Since $F_B = qv_d \times B$, where $v_d$ is the drift speed, and $q = It = I\frac{L}{v_d}$, then $F_B = IL\times B$
 \3 $\vec{L}$ is the vector length of the wire, considered to go in the direction of the conventional/positive current
 \2 It can also be measured for some small section of wire, $d\vec{L}$, such that the total force on the wire is summed, equal to the force on the wire as a whole
-\1 \textbf{Add 28-9 and 28-10}
-\1 Current loops within a magnetic field produces a separate force on each side of the loop, rotating it on the central axis
+\1 Current loops within a magnetic field produces a separate force on each side of the loop, rotating it on the central axis, the mechanism behind most electric motors
 \2 The normal vector for the orientation of the loop is determined by the right hand rule, curling fingers in the direction of the current, such that the thumb is the normal vector
-\2
-\1 The magnetic dipole moment, $\vec{\mu}$
+\2 For there to be torque, the magnetic field has to be perpendicular to both the normal vector and the rotational axis, with the angle between the normal vector and the magnetic field denoted as $\theta$
+\3 Thus, for a rectangular shape, $F_{side} = ILBcos(\theta)$, where L is the length of the side on which torque is being created, such that $\tau = 2F_{side}r = 2ILBrsin(\theta)$, where r is the radius of the sides from the rotational axis
+\3 This can be further modified, such that $\tau = ILBRsin(\theta)$, where R is the total length of the loop about the axis, extended to $\tau = IBAsin(\theta)$, which applies for all coil shapes
+\2 Similarly, coils have the same torque acting on each turn, such that the total torque is the individual torque multiplied by the number of turns
+\3 This assumes that the coil is flat enough that each turn appears as a loop, forming a flat coil
+\2 Coils thus turn, such that the normal vector is parallel and in the same direction as the magnetic field itself, acting as a magnetic dipole, where the normal vector points from the north
+\1 The magnetic dipole moment, $\vec{\mu}$, points in the direction of the normal vector, such that it points from the south to north pole, existing for all dipoles, such as bar magnets, current loops in a magnetic field, or rotating spheres of charge such as the Earth
+\2 $\mu = IA$ for some current-carrying loop, such that for a coil, it is that value multiplied by the number of turns, such that $\tau = \vec{\mu} \times \vec{B}$
+\2 Similarly, it is found that for some dipole rotating around an axis, $U = -\vec{\mu} \cdot \vec{B}$, where the lowest energy is when the magnetic field and normal vector are parallel in the same direction, greatest when opposite
+\3 As a result, the zero reference for the rotating dipole is determined to be when the normal vector and magnetic field are parallel
 \end{outline*}
 \section{Chapter 29 - Current-Produced Magnetic Fields}
 \begin{outline*}
@@ -468,6 +482,7 @@
 \4 For solenoids with multiple layers as a result, that simply increases the number of turns, since the radius doesn't matter
 \3 Toroids, or hollow coiled wires twisted such that the ends meet, can be determined similarly, through an Amperian circular loop inside the hollow space, such that $B = \mu_0In$
 \4 Thus, $B = \frac{\mu_0IN}{2\pi r}$, where N is the total number of turns and r is the radius to the loop
+\1 
 \1 \textbf{Add 29-6}
 \end{outline*}
 \section{Chapter 30 - Induction}
