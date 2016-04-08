@@ -412,8 +412,12 @@
 \3 After, it passed through crossed fields, forcing the particles in opposite directions, such that the electric field is turned on, then the magnetic field is modified until they have an equal effect
 \3 If the undeflected value is considered to be 0 on the y-axis, y = $\frac{|q|EL^2}{2mv^2}$, where v is the speed of the particle, m is the mass, q is the charge, and L is the length of the plates between which the fields exist
 \3 This was used to measure the ratio, $\frac{m}{|q|}$, considered to be the discovery of the electron by Thomson in 1897
-\2 It was also used in the discovery of the Hall Effect, by which the charge of charge carriers in a conductor can be determined
-\3 \textbf{//Finish 28-5}
+\2 It was also used in the discovery of the Hall Effect, stating that drifting electrons in a wire can be deflected, by which the charge of charge carriers in a conductor can be determined
+\3 As the magnetic field forces the protons to one side of the wire, this creates a charge separation within, such that a Hall potential difference forms
+\4 The potential difference increases until the force balances out that from the magnetic field
+\3 Voltmeters can then be connected to determine the potential, as well as the side of higher potential, the latter of which allows determination of the charge type of the current
+\4 By the definition of potential difference, drift velocity, and the equilibrium, $n = \frac{IBd}{VeA}$, where n is the number of charge carriers per unit volume
+\4 This can also be used to determine drift velocity by moving the wire until the relative velocity of the charges to the field is 0, such that there is no magnetic field, and the Hall potential disappears
 \1 Due to magnetic force acting perpendicularly to the field and the velocity, it causes the particular to move in uniform circular motion within a uniform field, such that $|q|vB = \frac{mv^2}{r}$
 \2 Thus, angular frequency ($\omega$) = $2\pi f = \frac{2\pi}{T} = \frac{|q|B}{m}$, such that the time of revolution depends purely on the field and charge to mass ratio, rather than on the velocity of the particle
 \3 As a result, it is the radius of the circle that changes based on the velocity, rather than the period/frequency
@@ -421,12 +425,16 @@
 \3 The pitch of the helix, or distance between adjacent turns, can thus be found as the velocity parallel multiplies by the period of the motion
 \3 Helices where the magnetic field is strong enough at the end that the period is approximately 0, causes the reflection of the particle down the helix, such that if both ends are like that, is called a magnetic bottle
 \2 Mass spectrometers measure the mass of a particle by using a produced voltage to produce the velocity, firing it into a magnetic field, and measuring the radius of the circle revolved around in a uniform magnetic field
-\1 \textbf{//Add 28-7}
+\1 \textbf{Add 28-7}
 \1 Uniform magnetic fields acting on a wire produce a force on the wire itself, due to the electrons within being unable to escape
 \2 Since $F_B = qv_d \times B$, where $v_d$ is the drift speed, and $q = It = I\frac{L}{v_d}$, then $F_B = IL\times B$
 \3 $\vec{L}$ is the vector length of the wire, considered to go in the direction of the conventional/positive current
 \2 It can also be measured for some small section of wire, $d\vec{L}$, such that the total force on the wire is summed, equal to the force on the wire as a whole
-\1 \textbf{//Add 28-9 and 28-10}
+\1 \textbf{Add 28-9 and 28-10}
+\1 Current loops within a magnetic field produces a separate force on each side of the loop, rotating it on the central axis
+\2 The normal vector for the orientation of the loop is determined by the right hand rule, curling fingers in the direction of the current, such that the thumb is the normal vector
+\2
+\1 The magnetic dipole moment, $\vec{\mu}$
 \end{outline*}
 \section{Chapter 29 - Current-Produced Magnetic Fields}
 \begin{outline*}
@@ -443,7 +451,7 @@
 \2 This can be combined with the formula for the force acting on a wire by an external field to find the force acting on a wire by another wire
 \3 Thus, it is shown by the right hand rule that parallel currents attract, antiparallel repel
 \3 1 Ampere is defined as the current in two parallel wires of infinite length, 1 meter apart in a vacuum, such that the force produced is $2*10^{-7}$ N per meter
-\3 \textbf{//Finish 29-3} 
+\3 \textbf{Finish 29-3} 
 \1 Ampere's Law states that $\oint \vec{B} \cdot d\vec{s} = \mu_0 I_{enc}$, such that the integral is a line integral, taken over some closed/Amperian loop
 \2 The direction of integration along the loop is arbitrarily chosen, such that current direction such that it moves up inside the loop as integration is counterclockwise is positive, current which moves down is negative
 \2 This ignores current outside the loop due to the magnetic field lines both entering and leaving the loop, such that it cancels out
@@ -460,16 +468,53 @@
 \4 For solenoids with multiple layers as a result, that simply increases the number of turns, since the radius doesn't matter
 \3 Toroids, or hollow coiled wires twisted such that the ends meet, can be determined similarly, through an Amperian circular loop inside the hollow space, such that $B = \mu_0In$
 \4 Thus, $B = \frac{\mu_0IN}{2\pi r}$, where N is the total number of turns and r is the radius to the loop
-\1 \textbf{\\Add 29-6}
+\1 \textbf{Add 29-6}
 \end{outline*}
 \section{Chapter 30 - Induction}
+\subsection{Faraday-Lenz Law}
 \begin{outline*}
 \1 Faraday discovered that the movement of a magnet produces an induced current by providing induced EMF, calling it induction
 \2 It was also discovered then that faster motion produces a greater current
 \3 He also found that moving one pole towards causes one direction of current, moving away the opposite, and the other pole is the opposite directions
 \2 He later discovered that with two conducting loops next to each other, when one connected to a voltage, an induced current in the opposite direction is produced in the other temporarily
 \3 The induced current is only during the change in the current of the first loop
-\1  
-\1 \textbf{Add 30-3 to 30-12}
+\1 \textbf{Copy 30-3 to 30-4}
+\2 The EMF produced by the change in flux of an area is the EMF around the outside of the area, such that the current is on the boundary of the area
+\1 When magnetic flux is changed by object motion, the magnetic force resists the motion by Lenz's Law, such that applied force is needed to counteract it, while simultaneously, thermal energy is created by the resistance of the wire
+\2 The applied force energy creates the thermal energy, such that the power of the applied force creates the power of the energy transfer
+\2 By the movement of a loop out of the magnetic field of height L, EMF = BLv, such that $I = \frac{BLv}{R}$
+\3 The magnetic field of the portions of the wire within the field, parallel to the movement of the loop, cancel each other out, such that only the other perpendicular side creates an opposing force, where $F = ILB = \frac{B^2L^2v}{R}$
+\3 By P = Fv, the power produced by the movement of the wire can be found by this function
+\2 Similarly, by the formula for the power dissipation of thermal energy of resistors, it is calculated to be the same value, $P = \frac{B^2L^2v^2}{R}$, such that all work done on the loop is converted to thermal energy
+\1 Eddy currents are currents produced in solid conductors by change in flux from a magnetic field, swirling in a whirlpool rather than on a single path, but represented as if following a single path
+\1 The Faraday-Lenz Law, in addition to predicting the creation of current and a magnetic field, predicts an induced electric field to create the current, produced even without a conductor
+\2 Due to the creation of circular motion of charges, the electric field lines form a series of concentric circles within the magnetic field, with the magnitude based on the amount of area by which flux changes
+\3 It is noted that electric potential as a result of these concentric circles has no meaning, such that while the voltage on a closed path is required to be zero, there is an induced EMF produced, such that only EMF is used, not potential
+\2 For some circular charge movement, $W = \oint \vec{F} \cdot d\vec{s} = q_0E(2\pi r)$, and by the definition of voltage, $W = EMF*q_0$, such that $EMF = 2\pi rE$
+\3 Thus, $EMF = \oint \vec{E} \cdot d\vec{s} = -\frac{d\phi_B}{dt}$, giving a new form of the law, where the flux is determined within the path
+\3 As a result, if the change in magnetic field is zero, the sum of the induced electric field over the loop will be, even if there exists a field at certain points on it
+\2 This provides a definition of EMF other than work per unit charge due to changing magnetic flux/to produce current, but rather purely in terms of an electric field on a closed path
+\end{outline*}
+\subsection{Inductors}
+\begin{outline*}
+\1 Inductors, represented in circuit diagrams by a coiled line, are used to produce a uniform magnetic field, defined by a solenoids
+\2 Inductance, L, is defined such that $LI = N\phi_B$, where N is the number of turns of the coil, measured in Henry (H)
+\3 The turns are considered to be linked by the shared equal flux within, such that $N\phi_B$ is called the magnetic flux linkage
+\3 As a result, $L = \frac{N\phi_B}{I} = \frac{nLBA}{I} = n^2L\mu_0A$ for a solenoid, showing that it is independent of the current, purely based on the device structure itself, similar to capacitors
+\4 This assumes the length is far greater than the radius, such that it ignores the fringing on the end of the solenoid, similar to parallel plate capacitors
+\2 For simplicity, it is assumed that there are no magnetic fields near inductors, which would distort the uniform field produced
+\1 Due to the magnetic field of an inductor being dependent on the current, changes in the current produce an induced EMF, derived by Faraday-Lenz such that EMF = $-L\frac{di}{dt}$, opposing the change in current, called self-induction
+\2 While potential cannot be defined within the inductor, the overall EMF (and voltage in an ideal inductor, seperated into a resistor otherwise) produced by the inductor can be
+\1 Similar to RC circuits, RL circuits can be constructed with a resistor and inductor connected to a battery, able to be switched such that the battery is disconnected from the circuit
+\2 While the battery is connected, the equation $0 = -IR - L\frac{dI}{dt} + V$ describes it due to opposing the initial change in current and initial current is 0
+\3 Thus, $I = \frac{V}{R}(1 - e^{-\frac{tR}{L}}) = \frac{V}{R}(1 - e^{-\frac{t}{\tau_L}})$, such that the inductor initially allows no current through it, acting as a broken wire
+\3 $\tau_L$ is the inductive time constant, or $\frac{L}{R}$
+\3 By this equation, as time approaches $\infty$, the current approaches $\frac{V}{R}$, such that it acts as a normal wire
+\2 When the battery is disconnected, the equation $0 = IR + L\frac{dI}{dt}$ describes it, opposing the drop in current, with the initial current as if there was only a resistor
+\3 Thus, $I = \frac{V}{R}e^{\frac{-tR}{L}} = \frac{V}{R}e^{\frac{-t}{\tau_L}}$, approaching zero as time approaches $\infty$
+\2 Since $P = LI\frac{dI}{dt}$, the energy stored in the magnetic field of the inductor is calculated as $U_B = \frac{1}{2}LI^2$, varying with time
+\3 This can be used on a solenoid to calculate the energy density, such that $u_B = \frac{U_B}{Al} = \frac{LI^2}{2Al} = \frac{1}{2}\mu_0n^2I^2 = \frac{B^2}{2\mu_0}$
+\4 This is able to be used in general within a magnetic field although derived by for a solenoid only
+\1 \textbf{Add 30-12}
 \end{outline*}
 \end{document}
