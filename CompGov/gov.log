@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  8 APR 2016 11:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  8 APR 2016 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,20 +1434,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
-[43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 948.
- [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 948.
+[43] [44]
+Overfull \hbox (3.68585pt too wide) in paragraph at lines 946--947
+[]\OT1/cmr/m/n/10.95 The 1982 Con-sti-tu-tion re-strained the CPC to the rule o
+f law, but the non-independent
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 974.
+
+[46]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 974.
  (./gov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 948.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 948.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 974.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 974.
 Package rerunfilecheck Info: File `gov.out' has not changed.
 (rerunfilecheck)             Checksum: 36B1CF8FC2005CE5A0C4845D4692DF7E;3479.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 948.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 974.
  ) 
 Here is how much of TeX's memory you used:
- 16625 strings out of 495028
- 279017 string characters out of 6181497
+ 16654 strings out of 495028
+ 279247 string characters out of 6181497
  352235 words of memory out of 5000000
  18700 multiletter control sequences out of 15000+600000
  11693 words of font info for 44 fonts, out of 8000000 for 9000
@@ -1460,10 +1470,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb>
-Output written on gov.pdf (44 pages, 238170 bytes).
+Output written on gov.pdf (46 pages, 243874 bytes).
 PDF statistics:
- 1438 PDF objects out of 1440 (max. 8388607)
- 1371 compressed objects within 14 object streams
- 824 named destinations out of 1000 (max. 500000)
+ 1482 PDF objects out of 1728 (max. 8388607)
+ 1412 compressed objects within 15 object streams
+ 853 named destinations out of 1000 (max. 500000)
  389 words of extra memory for PDF output out of 10000 (max. 10000000)
 
