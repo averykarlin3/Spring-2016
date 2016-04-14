@@ -441,7 +441,7 @@
 \2 The normal vector for the orientation of the loop is determined by the right hand rule, curling fingers in the direction of the current, such that the thumb is the normal vector
 \2 For there to be torque, the magnetic field has to be perpendicular to both the normal vector and the rotational axis, with the angle between the normal vector and the magnetic field denoted as $\theta$
 \3 Thus, for a rectangular shape, $F_{side} = ILBcos(\theta)$, where L is the length of the side on which torque is being created, such that $\tau = 2F_{side}r = 2ILBrsin(\theta)$, where r is the radius of the sides from the rotational axis
-\3 This can be further modified, such that $\tau = ILBRsin(\theta)$, where R is the total length of the loop about the axis, extended to $\tau = IBAsin(\theta)$, which applies for all coil shapes
+\3 This can be further modified, such that $\tau = ILBRsin(\theta)$, where R is the total length of the loop about the axis, extended to $\tau = IBAsin(\theta)$, which applies for all loop shapes
 \2 Similarly, coils have the same torque acting on each turn, such that the total torque is the individual torque multiplied by the number of turns
 \3 This assumes that the coil is flat enough that each turn appears as a loop, forming a flat coil
 \2 Coils thus turn, such that the normal vector is parallel and in the same direction as the magnetic field itself, acting as a magnetic dipole, where the normal vector points from the north
@@ -465,25 +465,28 @@
 \2 This can be combined with the formula for the force acting on a wire by an external field to find the force acting on a wire by another wire
 \3 Thus, it is shown by the right hand rule that parallel currents attract, antiparallel repel
 \3 1 Ampere is defined as the current in two parallel wires of infinite length, 1 meter apart in a vacuum, such that the force produced is $2*10^{-7}$ N per meter
-\3 \textbf{Finish 29-3} 
+\3 Railguns work by passing a current in one direction through the barrel, through a conducting material/fuse to the other wire, made such that it moves in the opposite direction 
+\4 The current causes the material to melt, producing a conducting gas, in which current continues to flow, creating an outward current above it when the bullet is, forcing the bullet out with $5 * 10^6g m/s^2$ acceleration
 \1 Ampere's Law states that $\oint \vec{B} \cdot d\vec{s} = \mu_0 I_{enc}$, such that the integral is a line integral, taken over some closed/Amperian loop
 \2 The direction of integration along the loop is arbitrarily chosen, such that current direction such that it moves up inside the loop as integration is counterclockwise is positive, current which moves down is negative
 \2 This ignores current outside the loop due to the magnetic field lines both entering and leaving the loop, such that it cancels out
 \2 This is simplified easily for symmetrical magnetic fields, such that $\vec{B}$ is constant throughout the loop, able to be removed from the integral
 \2 Similarly to Gauss's Law, for varying enclosed current density, the total enclosed current can be found by $I_{enc} = \int JdA$
 \2 It is notable that the current inside is equal to the total current passing through the loop, such that it is the sum of each current carrying wire cross-section going through
-\2 Ampere's Law is commonly used to determine the magnetic field produced by a solenoid, or a tightly wound helical coil of current-carrying wire, where the length is assumed to be far greater than the diameter
-\3 Ideal solenoids are assumed to be tightly/close packed and infinitely long, such that the field inside the coil is uniform and parallel to the axis
+\2 Ampere's Law is commonly used to determine the magnetic field produced by a solenoid, or a tightly wound helical coil of current-carrying wire around a metal core, where the length is assumed to be far greater than the diameter
+\3 Ideal solenoids are assumed to be tightly/close packed and infinitely long, such that the field inside the core is uniform and parallel to the axis
 \4 In addition, ideal solenoids have the magnetic field outside the solenoid equal to 0
 \4 These features are mainly true if the length far exceeds the diameter (except at the ends)
 \3 The Amperian loop is taken as a rectangle through the wire, such that one side is fully within, one fully without, such that the inside is the only part of the loop whose integral is non-zero
 \4 Further, the current enclosed by the loop is equal to the sum of the individual currents of each wire part passing through the loop, such that $I_{enc} = Inl$, where n is the number of turns per unit length and l is the length of the loop
 \4 Thus, $B = \mu_0In$ for an ideal solenoid, depending only on the number of turns per unit length and the current, such that it can be used easily to create a known uniform magnetic field
 \4 For solenoids with multiple layers as a result, that simply increases the number of turns, since the radius doesn't matter
-\3 Toroids, or hollow coiled wires twisted such that the ends meet, can be determined similarly, through an Amperian circular loop inside the hollow space, such that $B = \mu_0In$
+\3 Toroids, or hollow coiled solenoids twisted such that the ends meet, can be determined similarly, through an Amperian circular loop inside the hollow space, such that $B = \mu_0In$
 \4 Thus, $B = \frac{\mu_0IN}{2\pi r}$, where N is the total number of turns and r is the radius to the loop
-\1 
-\1 \textbf{Add 29-6}
+\1 Current-carrying loops and coils, due to forming a magnetic field, form a dipole by themselves as well, acting as a bar magnet, such that the magnetic field on the central axis can be calculated in terms of the dipole moment
+\2 By integrating over the loop by Biot-Savart's Law and cancelling out perpendicular field lines, it is found that $B(z) = \frac{\mu_0IR^2}{2(R^2 + z^2)^{3/2}}$, where z is the distance from the center of the loop, where north is positive
+\3 The magnetic field is generally assumed to be constant within the coil itself, such that z = 0, where it is measured starting from outside the coil
+\2 As the distance on the axis becomes much greater than the radius, $B = \frac{\mu_0IR^2}{2z^3}$, multiplied by the number of loops for a coil, such that it is generalized to $B = \frac{\mu_0\vec{\mu}}{2\pi z^3}$
 \end{outline*}
 \section{Chapter 30 - Induction}
 \subsection{Faraday-Lenz Law}
@@ -495,7 +498,7 @@
 \3 The induced current is only during the change in the current of the first loop
 \1 Magnetic flux is the amount of magnetic field lines passing through an area, such that $\phi_B = \int \vec{B} \cdot d\vec{A}$, measured in Wb, or $T*m^2$
 \2 The EMF produced by the change in flux of an area is the EMF around the outside of the area, such that the current is on the boundary of the area
-\2 For a coil, the magnetic field lines pass through each coil seperately, with equal flux if it is tightly packed enough, such that the flux is the flux through 1 coil multiplied by the number of coils
+\2 For a coil, the magnetic field lines pass through each coil seperately, with equal flux if it is closely packed enough, such that the flux is the flux through 1 coil multiplied by the number of coils
 \1 The Faraday-Lenz Law states that $EMF_{induced} = -\frac{d\phi_B}{dt}$
 \2 Faraday's Law of Induction states that the induced EMF is the result of the magnitude of change in the number of field lines through an area
 \3 Thus, change in the flux of a coil creates that EMF in each individual coil, multiplying the total EMF by the number of coils
@@ -519,7 +522,7 @@
 \end{outline*}
 \subsection{Inductors}
 \begin{outline*}
-\1 Inductors, represented in circuit diagrams by a coiled line, are used to produce a uniform magnetic field, defined by a solenoids
+\1 Inductors, represented in circuit diagrams by a coiled line, are used to produce a uniform magnetic field, defined by a solenoids, but which includes toroids or coils
 \2 Inductance, L, is defined such that $LI = N\phi_B$, where N is the number of turns of the coil, measured in Henry (H)
 \3 The turns are considered to be linked by the shared equal flux within, such that $N\phi_B$ is called the magnetic flux linkage
 \3 As a result, $L = \frac{N\phi_B}{I} = \frac{nLBA}{I} = n^2L\mu_0A$ for a solenoid, showing that it is independent of the current, purely based on the device structure itself, similar to capacitors
