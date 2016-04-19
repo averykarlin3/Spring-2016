@@ -148,8 +148,8 @@
 \3 The direction of the dipole is based on the direction of the electric field vectors acting on the point charge for any point on the dipole line
 \3 This is able to be expressed by the asymmetrical charge distribution of even more complicated molecules
 \2 $\tau_{external \to dipole} = P x E$, where E is the uniform external electric field
-\2 $PE = -E \cdot P$ for dipoles in an external electric field, where E is the uniform external electric field
-\2 $E_{dipole} = \frac{kP}{r^3}$, where r is the distance from the center of the dipole, where the point is on the dipole axis as r becomes far greater than the distance between the dipole charges
+\2 $PE = -E \cdot P$ for dipoles in an external electric field, where E is the uniform external electric field, where perpendicular to the field is the zero reference point
+\2 $E_{dipole} = \frac{2kP}{r^3}$, where r is the distance from the center of the dipole, where the point is on the dipole axis as r becomes far greater than the distance between the dipole charges
 \3 On the other hand, E is proportional to $\frac{1}{r^3}$ at all points on the dipole axis, rather than just at a large distance
 \3 This proportionality is due to the charges canceling each other out faster as the distance gets further
 \2 Dipoles can be induced by an electric field, even in a nonpolar molecule, or single atom, such that an induced dipole moment forms in the same direction as the field
@@ -185,7 +185,7 @@
 
 \subsection{Gauss's Law}
 \begin{outline*}
-\1 Gauss’s Law is used to calculate the graviational field at a point, by creating a gaussian surface including that point
+\1 Gauss’s Law is used to calculate the electrostatic field at a point, by creating a gaussian surface including that point
 \2 Gaussian surfaces must be imaginary, closed (compact/effectively-continuous without boundary in any direction), 3D surfaces, with a constant field throughout
 \2 They also must be symmetrical objects to minimize calculations
 \2 The electric field must also be parallel to the normal of the tangent plane, $A_N$, on the surface A
@@ -316,7 +316,7 @@
 \2 The random motion, rather than based on the temperature as classical physics expects, is based on quantum mechanics, at an effective velocity generally of $1.6 * 10^6$ m/s
 \3 Due to the drastically smaller size of the drift velocity, the distance travelled by electrons is based on the effective velocity, with the drift velocity negligible comparatively
 \2 This is the result of the slight random motion net movement in the direction of the field, creating the current
-\2 Since the charge per length L of wire is q = nALe, where A is the wire cross section and n is the number of charges per unit volume, $J = IA$ if J is uniform over the length of wire, and L/t = $v_d$, then $\vec{v}_d = \frac{I}{nAe} = \frac{J}{ne}$ (if J is uniform)
+\2 Since the charge per length L of wire is q = nALe, where A is the wire cross section and n is the number of charges per unit volume, $I = JA$ if J is uniform over the length of wire, and L/t = $v_d$, then $\vec{v}_d = \frac{I}{nAe} = \frac{J}{ne}$ (if J is uniform)
 \3 ne is considered to be the carrier charge density, or charge per unit volume, negative for electrons, such that the direction of $\vec{J}$ and $\vec{v}_d$ are opposite
 \3 By the convention of assuming protons make up charge though, ne is generally assumed to be positive
 \2 On the other hand, changes in the electric field strength throughout the wire are transmitted almost at the speed of light magnitude ($3*10^9$), causing all electrons to begin to drift
@@ -351,7 +351,7 @@
 \begin{outline*}
 \1 Circuits can be powered either by a charged capacitor or a charge pump, the former temporarily until it discharges, the latter an object which produces a steady current by maintaining a voltage
 \2 Charge pumps are also called emf devices, producing an emf, or electromotive force, often in the form of a battery and electric generator, or less commonly in the form of solar, fuel cells, thermophiles, or biological generators
-\2 EMF is represented as an arrow from the positive to negative terminals of the device, with internal chemistry in the device to create current unless a circuit joins the terminals
+\2 EMF is represented as an arrow from the negative to positive terminals of the device, with internal chemistry in the device to create current unless a circuit joins the terminals
 \2 The EMF device forces charges in the EMF direction within the battery to create a constant potential, converting some other form of energy to produce the electrical energy, such as mechanical energy in generators
 \2 $EMF = \frac{dW}{dq}$, or the work that must be done on each charge by the device to move a unit positive charge to the high voltage terminal, measured in Volts
 \3 This is due to the need for the battery to move an equal amount of charge that is traveling in any given amount of time through a cross-section of the circuit, through the battery
@@ -368,7 +368,7 @@
 \1 Current in a single-loop circuit can be calculated either by conservation of energy (V = IR) in single-loop, single-resistor circuits, and by potential for more complex
 \2 Kirchoff's Voltage Law on a loop to calculate by potential, such that the sum of each small potential change as the loop is moved through sums to 0
 \3 The Resistance Rule states that resistance while traversing in the direction of current have a negative change in potential (-IR), in the opposite direction, positive (IR)
-\3 The EMF Rule states that ideal EMF devices while traversing in the direction of negative plate to positive is positive, conversely negative
+\3 The EMF Rule states that ideal EMF devices while traversing in the direction of negative plate to positive is positive, conversely negative (same direction as EMF is positive, or vice versa)
 \2 Potential between two points is calculated similarly using Kirchoff's Voltage Law over a small region as the sum of the individual changes in potential
 \2 Multi-loop circuits can have the voltage taken for multiple loops to form a system of equations by which it can be solved
 \2 If not stated, in a circuit with junctions or multiple batteries, the current can be chosen to go in any direction, due to only causing a negative sign if incorrect, moving in the direction of decreasing potential
@@ -440,13 +440,13 @@
 \1 Current loops within a magnetic field produces a separate force on each side of the loop, rotating it on the central axis, the mechanism behind most electric motors
 \2 The normal vector for the orientation of the loop is determined by the right hand rule, curling fingers in the direction of the current, such that the thumb is the normal vector
 \2 For there to be torque, the magnetic field has to be perpendicular to both the normal vector and the rotational axis, with the angle between the normal vector and the magnetic field denoted as $\theta$
-\3 Thus, for a rectangular shape, $F_{side} = ILBcos(\theta)$, where L is the length of the side on which torque is being created, such that $\tau = 2F_{side}r = 2ILBrsin(\theta)$, where r is the radius of the sides from the rotational axis
+\3 Thus, for a rectangular shape, $F_{side} = ILBsin(\theta)$, where L is the length of the side on which torque is being created, such that $\tau = 2F_{side}r = 2ILBrsin(\theta)$, where r is the radius of the sides from the rotational axis
 \3 This can be further modified, such that $\tau = ILBRsin(\theta)$, where R is the total length of the loop about the axis, extended to $\tau = IBAsin(\theta)$, which applies for all loop shapes
 \2 Similarly, coils have the same torque acting on each turn, such that the total torque is the individual torque multiplied by the number of turns
 \3 This assumes that the coil is flat enough that each turn appears as a loop, forming a flat coil
 \2 Coils thus turn, such that the normal vector is parallel and in the same direction as the magnetic field itself, acting as a magnetic dipole, where the normal vector points from the north
 \1 The magnetic dipole moment, $\vec{\mu}$, points in the direction of the normal vector, such that it points from the south to north pole, existing for all dipoles, such as bar magnets, current loops in a magnetic field, or rotating spheres of charge such as the Earth
-\2 $\mu = IA$ for some current-carrying loop, such that for a coil, it is that value multiplied by the number of turns, such that $\tau = \vec{\mu} \times \vec{B}$
+\2 $\mu = IA$ for some current-carrying loop, such that for a coil, it is that value multiplied by the number of turns ($\mu = NIA$, where N is the number of turns), such that $\tau = \vec{\mu} \times \vec{B}$
 \2 Similarly, it is found that for some dipole rotating around an axis, $U = -\vec{\mu} \cdot \vec{B}$, where the lowest energy is when the magnetic field and normal vector are parallel in the same direction, greatest when opposite
 \3 As a result, the zero reference for the rotating dipole is determined to be when the normal vector and magnetic field are parallel
 \end{outline*}
@@ -468,9 +468,9 @@
 \3 Railguns work by passing a current in one direction through the barrel, through a conducting material/fuse to the other wire, made such that it moves in the opposite direction 
 \4 The current causes the material to melt, producing a conducting gas, in which current continues to flow, creating an outward current above it when the bullet is, forcing the bullet out with $5 * 10^6g m/s^2$ acceleration
 \1 Ampere's Law states that $\oint \vec{B} \cdot d\vec{s} = \mu_0 I_{enc}$, such that the integral is a line integral, taken over some closed/Amperian loop
-\2 The direction of integration along the loop is arbitrarily chosen, such that current direction such that it moves up inside the loop as integration is counterclockwise is positive, current which moves down is negative
+\2 The direction of integration along the loop is arbitrarily chosen, generally counterclockwise, such that current direction is found by curling the fingers, where the thumb signifies positive
 \2 This ignores current outside the loop due to the magnetic field lines both entering and leaving the loop, such that it cancels out
-\2 This is simplified easily for symmetrical magnetic fields, such that $\vec{B}$ is constant throughout the loop, able to be removed from the integral
+\2 This is simplified easily for \underline{symmetrical} magnetic fields, such that $\vec{B}$ is constant throughout the loop, able to be removed from the integral
 \2 Similarly to Gauss's Law, for varying enclosed current density, the total enclosed current can be found by $I_{enc} = \int JdA$
 \2 It is notable that the current inside is equal to the total current passing through the loop, such that it is the sum of each current carrying wire cross-section going through
 \2 Ampere's Law is commonly used to determine the magnetic field produced by a solenoid, or a tightly wound helical coil of current-carrying wire around a metal core, where the length is assumed to be far greater than the diameter
