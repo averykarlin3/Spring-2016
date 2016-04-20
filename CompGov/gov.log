@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.24)  18 APR 2016 11:36
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  19 APR 2016 14:12
->>>>>>> c4818b0469f5f8ca4c90276a34f525929eb23dc4
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.24)  20 APR 2016 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1130,47 +1126,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< HEAD
- [46]
-[47]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1005.
- [48]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1005.
- (./gov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1005.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1005.
-
-Package rerunfilecheck Info: File `gov.out' has not changed.
-(rerunfilecheck)             Checksum: FB70BE99C0A9AE58CF9E3DFAEDAAE70C;3612.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1005.
- ) 
-Here is how much of TeX's memory you used:
- 16794 strings out of 495028
- 280753 string characters out of 6181497
- 348109 words of memory out of 5000000
- 18778 multiletter control sequences out of 15000+600000
- 11693 words of font info for 44 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 56i,12n,55p,413b,867s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/averykarlin/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on gov.pdf (48 pages, 250789 bytes).
-PDF statistics:
- 1572 PDF objects out of 1728 (max. 8388607)
- 1500 compressed objects within 15 object streams
- 914 named destinations out of 1000 (max. 500000)
- 405 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-=======
  [47]
 [48]
 ! Undefined control sequence.
-l.1055 \en
+l.1070 \en
           :qd{document}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1186,12 +1145,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 16749 strings out of 495028
- 280026 string characters out of 6181497
- 344235 words of memory out of 5000000
- 18700 multiletter control sequences out of 15000+600000
+ 16828 strings out of 495028
+ 281035 string characters out of 6181497
+ 346109 words of memory out of 5000000
+ 18778 multiletter control sequences out of 15000+600000
  11693 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,11n,55p,413b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,55p,413b,867s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
->>>>>>> c4818b0469f5f8ca4c90276a34f525929eb23dc4
