@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \contentsline {section}{\numberline {1}Chapter 1 - Introduction to Comparative Government}{4}{section.1}
 \contentsline {subsection}{\numberline {1.1}Comparative Method}{4}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Sovereignty, Authority, and Power}{5}{subsection.1.2}
@@ -47,3 +48,5 @@
 \contentsline {section}{\numberline {6}Chapter 8 - Russia}{47}{section.6}
 \contentsline {subsection}{\numberline {6.1}Political and Economic Change}{47}{subsection.6.1}
 \contentsline {section}{\numberline {7}Articles}{47}{section.7}
+=======
+>>>>>>> c4818b0469f5f8ca4c90276a34f525929eb23dc4
