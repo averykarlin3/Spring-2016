@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  29 APR 2016 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.24)  1 MAY 2016 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1140,7 +1140,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1072 \begin{outline*}
+l.1077 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1154,7 +1154,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1072 \begin{outline*}
+l.1077 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1168,7 +1168,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1072 \begin{outline*}
+l.1077 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1182,7 +1182,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1072 \begin{outline*}
+l.1077 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1196,7 +1196,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1072 \begin{outline*}
+l.1077 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1210,7 +1210,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1076 \begin{outline*}
+l.1081 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1224,7 +1224,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1076 \begin{outline*}
+l.1081 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1238,7 +1238,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1076 \begin{outline*}
+l.1081 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1252,7 +1252,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1076 \begin{outline*}
+l.1081 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1266,7 +1266,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1076 \begin{outline*}
+l.1081 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1280,7 +1280,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1080 \begin{outline*}
+l.1085 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1294,7 +1294,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1080 \begin{outline*}
+l.1085 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1308,7 +1308,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1080 \begin{outline*}
+l.1085 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1322,7 +1322,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1080 \begin{outline*}
+l.1085 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1336,14 +1336,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1080 \begin{outline*}
+l.1085 \begin{outline*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[50]
 ! Undefined control sequence.
-l.1094 \en
+l.1099 \en
           :qd{document}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1359,11 +1360,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 16771 strings out of 495028
- 280223 string characters out of 6181497
+ 16798 strings out of 495028
+ 280492 string characters out of 6181497
  344235 words of memory out of 5000000
  18702 multiletter control sequences out of 15000+600000
  11693 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,11n,55p,413b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,55p,413b,869s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
