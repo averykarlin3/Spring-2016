@@ -545,9 +545,8 @@
 \2 As a result, similarly to self-induction, $EMF_2 = -M_2\frac{dI_1}{d2}$
 \2 It has been found separately that the mutual inductance of two coils is dependent on both coils, such that it is equal for each
 \end{outline*}
-\section{Chapter 31 - Electromagnetic Oscillations and AC Current}
+\section{Chapter 31 - Electromagnetic Oscillations}
 \underline{Note:} Does not include AC Circuits
-\subsection{Oscillating Circuits}
 \begin{outline*}
 \1 LC circuits have the electric field of the capacitor and the magnetic field of the inductor oscillate sinusoidally over time, called electromagnetic oscillations
 \2 LC circuits are represented by a charged capacitor connected to an inductor, the capacitor having been fully charged previously by voltage connected
@@ -582,7 +581,18 @@
 \1 Gauss's Law for Magnetic Fields states that magnetic monopoles do not exist, such that magnetic flux must be equal to 0 ($\Phi_B = \oint \vec{B} \cdot d\vec{A} = 0$)
 \2 Thus, net flux through some closed Gaussian surface for a magnetic field must be equal to 0, due to it being impossible to isolate magnetic charge/poles within the surface to create a net magnetic charge
 \2 This is true even if the Gaussian surface is smaller than the dipole, such that it encloses only one of the apparent magnetic poles, due to a pole existing within due to the direction of the movement of field lines
-\1 
+\1 Maxwell's Law of Induction, similar to Faraday-Lenz, states that a changing electric flux induces a magnetic field, written similarly
+\2 $\oint \vec{B} \cdot d\vec{s} = \mu_0\epsilon_0 \frac{d\Phi_E}{dt}$, where $\vec{B}$ is the magnetic field along a closed loop due to changing electric flux within the region of the loop
+\3 There is no minus sign, such as that of the Faraday-Lenz Law, such that the direction of the induced electric field is opposite that of a similarly induced magnetic field
+\2 This creates a magnetic field within a capacitor as it is charging, produced in concentric circles for circular capacitor parallel plates
+\3 Induced magnetic fields are far harder to measure, due to a much smaller magnitude produced, and due to the lack of an easy method of multiplying the magnitude, such as a coiled wire for induced EMF
+\2 The law can be rewritten based on the dimensions as $\oint \vec{B} \cdot d\vec{s} = \mu_0(i_{enc} + i_{d-enc})$, where $i_{d-enc}$ is the enclosed displacement current
+\3 Thus, $i_d = \epsilon_0 \frac{d\Phi_E}{dt}$, referring to the current within the loop that is being created due to the same creation of a magnetic field by the changing electric flux 
+\3 In the case of capacitors, the total displacement current is equal to the current causing the changing flux by charging the capacitor
+\4 If current is uniformly distributed, such that the electric field is uniform, the displacement current is uniform
+\2 Since Maxwell's Law is used for magnetic fields produced by a changing electric field and Ampere's is for current, they are combined to form the Ampere-Maxwell Law, accounting for both, due to giving the magnetic field in the same form
+\3 $\oint \vec{B} \cdot d\vec{s} = \mu_0\epsilon_0 \frac{d\Phi_E}{dt} + \mu_0I_{enc}$
+\3 Thus, in situations of purely a changing field, such as capacitors, only the Maxwell portion is valid, in situations of a constant current, only the Ampere portion is
 \1 Maxwell's Equations of Electromagnetism are the joint set of Gauss's Law for Electricity, Gauss's Law for Magnetism, the Faraday-Lenz Law, and the Ampere-Maxwell Law
 \end{outline*}
 \end{document}
