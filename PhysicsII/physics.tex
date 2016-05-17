@@ -546,6 +546,7 @@
 \2 It has been found separately that the mutual inductance of two coils is dependent on both coils, such that it is equal for each
 \end{outline*}
 \section{Chapter 31 - Electromagnetic Oscillations and AC Current}
+\underline{Note:} Does not include AC Circuits
 \subsection{Oscillating Circuits}
 \begin{outline*}
 \1 LC circuits have the electric field of the capacitor and the magnetic field of the inductor oscillate sinusoidally over time, called electromagnetic oscillations
@@ -562,17 +563,26 @@
 \3 $\omega_{D} = \sqrt{\omega^2 - \frac{R}{2L}^2}$, such that as R approaches 0, $\omega_D \to \omega$
 \3 $Q = Q_{max}e^{\frac{-Rt}{2L}}cos(\omega_Dt + \phi)$
 \end{outline*}
-\subsection{AC Circuits}
+%\subsection{AC Circuits}
+%\begin{outline*}
+%\1 If the energy dissipated by the RLC circuit is continuously added by some external EMF device, the oscillations will remain at the same initial magnitude indefinitely
+%\2 Thus, the EMF production must oscillate along with the current itself, such that it provides the same oscillations
+%\2 The advantage of AC over DC production is the alternating magnetic field of the conductor, such that the voltage can be changed by Faraday's Law of Induction through a transformer at will
+%\3 It is also more easily applied to generators and rotating machines in AC form than DC
+%\2 As a result, $EMF = \|EMF\|sin(w_dt)$, where $w_d$ is called the driving angular frequency, and $I = |I|sin(w_d - \phi)$
+%\3 The phase shift is written negative by convention, and is included since the current may not be in phase with the EMF
+%\3 The driving angular frequency is determined by the generator, such that the oscillations are forced, rather than at the natural angular frequency
+%\3 When the driving and natural angular frequencies resonate, the amplitude of the circuit is at the maximum
+%\2 The AC generator is represented by a circle with a sine wave drawn within it
+%\1 \textbf{FINISH FROM BOOK WHEN NEEDED}
+%\end{outline*}
+\section{Chapter 32 - Maxwell's Equations}
+\underline{Note:} Does not include Magnetic Properties
 \begin{outline*}
-\1 If the energy dissipated by the RLC circuit is continuously added by some external EMF device, the oscillations will remain at the same initial magnitude indefinitely
-\2 Thus, the EMF production must oscillate along with the current itself, such that it provides the same oscillations
-\2 The advantage of AC over DC production is the alternating magnetic field of the conductor, such that the voltage can be changed by Faraday's Law of Induction through a transformer at will
-\3 It is also more easily applied to generators and rotating machines in AC form than DC
-\2 As a result, $EMF = \|EMF\|sin(w_dt)$, where $w_d$ is called the driving angular frequency, and $I = |I|sin(w_d - \phi)$
-\3 The phase shift is written negative by convention, and is included since the current may not be in phase with the EMF
-\3 The driving angular frequency is determined by the generator, such that the oscillations are forced, rather than at the natural angular frequency
-\3 When the driving and natural angular frequencies resonate, the amplitude of the circuit is at the maximum
-\2 The AC generator is represented by a circle with a sine wave drawn within it
-\1 \textbf{FINISH FROM BOOK WHEN NEEDED}
+\1 Gauss's Law for Magnetic Fields states that magnetic monopoles do not exist, such that magnetic flux must be equal to 0 ($\Phi_B = \oint \vec{B} \cdot d\vec{A} = 0$)
+\2 Thus, net flux through some closed Gaussian surface for a magnetic field must be equal to 0, due to it being impossible to isolate magnetic charge/poles within the surface to create a net magnetic charge
+\2 This is true even if the Gaussian surface is smaller than the dipole, such that it encloses only one of the apparent magnetic poles, due to a pole existing within due to the direction of the movement of field lines
+\1 
+\1 Maxwell's Equations of Electromagnetism are the joint set of Gauss's Law for Electricity, Gauss's Law for Magnetism, the Faraday-Lenz Law, and the Ampere-Maxwell Law
 \end{outline*}
 \end{document}
