@@ -31,6 +31,8 @@ The objective of the lab is to measure the resistance of unknown resistors by me
 \section*{Introduction}
 The measuring of resistance can be done by several methods, the first of which depends on Ohm's Law, stating $R = \frac{V}{I}$. On the other hand, since the voltmeter, placed in parallel such that the voltage is equal, takes away a portion of the current, or because the ammeter, placed in series such that the current is equal, takes away a portion of the voltage, the measurement is not exact. If the resistance of the voltmeter greatly exceeds that of the resistor, it will not interfere, while if the resistance of the ammeter is vastly less, it will not interfere. Otherwise, for the voltmeter impacting the current, $R = \frac{V}{I_R} = \frac{V}{I - I_v} = \frac{V}{I - \frac{V}{R_V}}$, where $I_R$ is the voltage through the resistor, $I_v$ is the current through the voltmeter, and $R_V$ is the resistance of the voltmeter. For the ammeter impacting the voltage, $R = \frac{V_R}{I} = \frac{V - V_A}{I} = \frac{V - R_AI}{I} = \frac{V}{I} - R_A$.
 
+As a result, it can be seen that as the voltmeter resistance approaches infinity, the resistance approaches $\frac{V}{I}$ for the former case, such that it plays no effect, and likewise, as the ammeter resistance approaches zero, the resistance approaches the same, such that there is no effect. This is due to the fact that as voltmeter resistance is infinite, the resistance through the other path is so far below, that all the current moves through there, while the current through the voltmeter is negligable. As the ammeter resistance approaches 0, no voltage is lost passing through it as a result, since it acts like a normal wire, thus having no effect.
+
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
@@ -58,7 +60,7 @@ The slide-wire method uses a slide wire resistor instead of the two known resist
 
 \section*{Procedures and Results}
 
-First, the Ammeter-Voltmeter methods are used with a small resistor, first creating a circuit such that the ammeter reading is slightly higher than actual, second so that the voltmeter reading is slightly higher than actual, with an additional variable resistor, also called a rheostat, separate from the resistor being measured, in series. The resistance of the ammeter and the voltmeter can be separately measured by an ohmmeter, so that they can be taken into account. The voltage and current across the resistor can thus be found as well. It is then taken for three different rheostat resistances, such that the voltage and current through the unknown resistor varies. It is then redone by the same means for a large resistor.
+First, the Ammeter-Voltmeter methods are used with a small resistor, first creating a circuit such that the ammeter reading is slightly higher than actual, second so that the voltmeter reading is slightly higher than actual, with an additional variable resistor, a rheostat in this case using only one of the resistors, separate from the resistor being measured, in series. The resistance of the ammeter and the voltmeter can be separately measured by an ohmmeter, so that they can be taken into account. The voltage and current across the resistor can thus be found as well. It is then taken for three different rheostat resistances, such that the voltage and current through the unknown resistor varies. It is then redone by the same means for a large resistor.
 
 \begin{figure}[h]
 \centering
@@ -74,7 +76,7 @@ First, the Ammeter-Voltmeter methods are used with a small resistor, first creat
 \vspace*{0cm}
 \end{figure}
 
-The four resistor form of the Wheatstone Bridge is then made as a result of the lack of a slide wire resistor. It is checked with the two known resistors found earlier, the rheostat, and the unknown resistor as the first test, followed by replacing the unknown resistor with a large resistor of known resistance to measure as the second test.
+The slide-wire form of the Wheatstone Bridge is then made in a variation, with a rheostat used as the two unknown resistors, due to acting as two varying resistors in series, with a divider between, similar to a slide-wire. It is measured for some small and large unknown resistor, taken for three different known resistors with each part of the rheostat resistance measured by an ohmmeter when there is no current passing through the bridge, measured by an ammeter.
 
 \begin{figure}[h]
 \centering
@@ -83,46 +85,93 @@ The four resistor form of the Wheatstone Bridge is then made as a result of the 
 \vspace*{0cm}
 \end{figure}
 
+\underline{Small Resistor:}
 \begin{center}
-$$m_{pulley} = 31.6 g$$
+$$R_V \text{(Voltmeter Resistance)}= 1 \Omega$$
+$$R_X \text{(Expected Resistance)}= 50.2 \Omega$$
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Trial & 1 & 2 & 3 & 4 \\
+Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Descending Mass, $m_2$ (kg) & 0.06636 & 0.165 & 0.26636 & 0.3673\\
+Current, I (A) & 0.048 & 0.039 & 0.031 \\
 \hline
-Ascending Mass, $m_1$ (kg) & 0.055 & 0.150 & 0.250 & 0.350\\
-\hline
-Distance of Travel, $y$ (m) & 0.8984 & 0.855 & 0.605 & 0.61\\
-\hline
-Time of Travel, Run 1, $t_1$ (s) & 1.47 & 2.1 & 2.54 & 3.28\\
-\hline
-Time of Travel, Run 2, $t_2$ (s) & 1.21 & 2.27 & 2.48 & 3.4\\
-\hline
-Time of Travel, Run 3, $t_3$ (s) & 1.31 & 2.18 & 2.44 & 3.55\\
-\hline
-Frictional Mass, $m_f$ (kg) & 0.00136 & 0.005 & 0.00636 & 0.0073\\
+Voltage, V (V) & 2.6 & 2.1 & 1.6 \\
 \hline
 \end{tabular}
+\end{center}
+
+\begin{center}
+$$R_A \text{(Ammeter Resistance)}= 0.48 \Omega$$
+$$R_X \text{(Expected Resistance)}= 50.2 \Omega$$
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Trial & 5 & 6 & 7 & 8 \\
+Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Descending Mass, $m_2$ (kg) & 0.2673 & 0.2693 & 0.2713& 0.2763\\
+Current, I (A) & 0.048 & 0.039 & 0.032 \\
 \hline
-Ascending Mass, $m_1$ (kg) & 0.259 & 0.257 & 0.255 & 0.25\\
+Voltage, V (V) & 2.6 & 2.1 & 1.6 \\
 \hline
-Distance of Travel, $y$ (m) & 0.61 & 0.61 & 0.61 & 0.61\\
+\end{tabular}
+\end{center}
+
+\underline{Large Resistor:}
+\begin{center}
+$$R_V \text{(Voltmeter Resistance)}= 1 \Omega$$
+$$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
+\begin{tabular}
+{|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Time of Travel, Run 1, $t_1$ (s) & 9.16& 4.58& 2.75& 2.1\\
+Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Time of Travel, Run 2, $t_2$ (s) & 6.35& 3.6 & 3.16 & 2\\
+Current, I (A) & 0.033 & 0.029 & 0.024 \\
 \hline
-Time of Travel, Run 3, $t_3$ (s) & 8.15& 4.21 & 3.03 & 2.13\\
+Voltage, V (V) & 2.6 & 2.3 & 1.9 \\
 \hline
-Frictional Mass, $m_f$ (kg) & 0.0073 & 0.0073 & 0.0073 & 0.0073\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+$$R_A \text{(Ammeter Resistance)}= 0.48 \Omega$$
+$$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
+\begin{tabular}
+{|m{9em}|m{7em}|m{7em}|m{7em}|}
+\hline
+Rheostat Setting & 1 & 2 & 3 \\
+\hline
+Current, I (A) & 0.032 & 0.029 & 0.021 \\
+\hline
+Voltage, V (V) & 2.6 & 2.3 & 1.7 \\
+\hline
+\end{tabular}
+\end{center}
+
+\underline{Wheatstone Bridge:}
+\begin{center}
+$$R_X \text{(Expected Resistance)}= 25.6 \Omega$$
+\begin{tabular}
+{|m{9em}|m{7em}|m{7em}|m{7em}|}
+\hline
+Known Resistor, $R_K (\Omega)$ & 50.2 & 74.6 & 25.6 \\
+\hline
+Varying Resistor 1, $R_1 (\Omega)$ & 24.2 & 26.1 & 17.5 \\
+\hline
+Varying Resistor 2, $R_2 (\Omega)$ & 12.8 & 9.4 & 17.5 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+$$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
+\begin{tabular}
+{|m{9em}|m{7em}|m{7em}|m{7em}|}
+\hline
+Known Resistor, $R_K (\Omega)$ & 25.6 & 50.2 & 74.6 \\
+\hline
+Varying Resistor 1, $R_1 (\Omega)$ & 8.7 & 13.9 & 17 \\
+\hline
+Varying Resistor 2, $R_2 (\Omega)$ & 26.1 & 21.2 & 17.9 \\
 \hline
 \end{tabular}
 \end{center}
@@ -138,7 +187,7 @@ $$\text{Percent Acceleration Error} = \frac{|a_t - a_m|}{a_t}*100\% = \frac{|0.6
 
 \begin{center}
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{7em}|m{7em}|m{7em}|m{7em}|}
 \hline
 Trial & 1 & 2 & 3 & 4 \\
 \hline
@@ -156,7 +205,7 @@ Percent Acceleration Error (\%) & 58.59 & 23.62 & 27.4 & 19.7\\
 \hline
 \end{tabular}
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{7em}|m{7em}|m{7em}|m{7em}|}
 \hline
 Trial & 5 & 6 & 7 & 8 \\
 \hline
