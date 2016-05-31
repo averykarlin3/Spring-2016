@@ -87,7 +87,7 @@ The slide-wire form of the Wheatstone Bridge is then made in a variation, with a
 
 \underline{Small Resistor:}
 \begin{center}
-$$R_V \text{(Voltmeter Resistance)}= 1 \Omega$$
+$$R_V \text{(Voltmeter Resistance)}= 10 M\Omega$$
 $$R_X \text{(Expected Resistance)}= 50.2 \Omega$$
 \begin{tabular}
 {|m{9em}|m{7em}|m{7em}|m{7em}|}
@@ -118,7 +118,7 @@ Voltage, V (V) & 2.6 & 2.1 & 1.6 \\
 
 \underline{Large Resistor:}
 \begin{center}
-$$R_V \text{(Voltmeter Resistance)}= 1 \Omega$$
+$$R_V \text{(Voltmeter Resistance)}= 10 M\Omega$$
 $$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
 \begin{tabular}
 {|m{9em}|m{7em}|m{7em}|m{7em}|}
@@ -153,6 +153,8 @@ $$R_X \text{(Expected Resistance)}= 25.6 \Omega$$
 \begin{tabular}
 {|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
+Trial & 1 & 2 & 3 \\
+\hline
 Known Resistor, $R_K (\Omega)$ & 50.2 & 74.6 & 25.6 \\
 \hline
 Varying Resistor 1, $R_1 (\Omega)$ & 24.2 & 26.1 & 17.5 \\
@@ -167,6 +169,8 @@ $$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
 \begin{tabular}
 {|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
+Trial & 1 & 2 & 3 \\
+\hline
 Known Resistor, $R_K (\Omega)$ & 25.6 & 50.2 & 74.6 \\
 \hline
 Varying Resistor 1, $R_1 (\Omega)$ & 8.7 & 13.9 & 17 \\
@@ -179,6 +183,12 @@ Varying Resistor 2, $R_2 (\Omega)$ & 26.1 & 21.2 & 17.9 \\
 \section*{Discussion}
 Sample calculations for the non-measured data are as shown using the formulas found above:
 
+$$R \text{(Voltmeter Interference, Small Resistor, Trial 1)} = \frac{V}{I - \frac{V}{R_V}} = \frac{2.6}{0.048 - \frac{2.6}{10^7}} = 54.16 \Omega$$
+$$R \text{(Ammeter Interference, Small Resistor, Trial 1)} = \frac{V}{I} - R_A = \frac{2.6}{0.048} - 0.48 = 53.69 \Omega$$
+$$R_{avg} \text{(Voltmeter Interference, Small Resistor)} = \frac{R_1 + R_2 + R_3}{3} = \frac{54.16 + 53.85 + 51.61}{3} = 53.21 \Omega$$
+$$\text{Percent Error (Small Resistor, Voltmeter Interference)} = \frac{\text{$|$Expected - Actual$|$} * 100\%}{\text{Expected}} =$$\\$$\frac{|50.2 - 53.21| * 100\%}{53.21} = 5.66\%$$
+$$R \text{(Wheatstone, Small Resistor, Trial 1)} = \frac{R_2R_K}{R_1} = \frac{12.8*50.2}{24.2} = 26.55 \Omega$$
+
 \underline{Small Resistor:}
 \begin{center}
 \begin{tabular}
@@ -186,11 +196,11 @@ Sample calculations for the non-measured data are as shown using the formulas fo
 \hline
 Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Resistance, R $(\Omega)$ & & & \\
+Resistance, R $(\Omega)$ & 54.16 & 53.85 & 51.61\\
 \hline
 \end{tabular}
-\\Average Resistance ($\Omega$) =
-\\Percent Error = 
+\\Average Resistance ($\Omega$) = 53.21
+\\Percent Error = 5.66\%
 \end{center}
 
 \begin{center}
@@ -199,11 +209,11 @@ Resistance, R $(\Omega)$ & & & \\
 \hline
 Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Resistance, R $(\Omega)$ & & & \\
+Resistance, R $(\Omega)$ & 53.69 & 53.37 & 49.52\\
 \hline
 \end{tabular}
-\\Average Resistance ($\Omega$) = 
-\\Percent Error = 
+\\Average Resistance ($\Omega$) = 52.19
+\\Percent Error = 3.96\%
 \end{center}
 
 \underline{Large Resistor:}
@@ -213,11 +223,11 @@ Resistance, R $(\Omega)$ & & & \\
 \hline
 Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Resistance, R $(\Omega)$ & & & \\
+Resistance, R $(\Omega)$ & 78.79 & 79.31 & 79.17\\
 \hline
 \end{tabular}
-\\Average Resistance ($\Omega$) = 
-\\Percent Error = 
+\\Average Resistance ($\Omega$) = 79.09
+\\Percent Error = 5.88\%
 \end{center}
 
 \begin{center}
@@ -226,11 +236,11 @@ Resistance, R $(\Omega)$ & & & \\
 \hline
 Rheostat Setting & 1 & 2 & 3 \\
 \hline
-Resistance, R $(\Omega)$ & & & \\
+Resistance, R $(\Omega)$ & 80.77 & 78.83 & 80.47\\
 \hline
 \end{tabular}
-\\Average Resistance ($\Omega$) =
-\\Percent Error = 
+\\Average Resistance ($\Omega$) = 80.02
+\\Percent Error = 7.12\%
 \end{center}
 
 \underline{Wheatstone Bridge:}
@@ -238,39 +248,32 @@ Resistance, R $(\Omega)$ & & & \\
 \begin{tabular}
 {|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Rheostat Setting & 1 & 2 & 3 \\
+Trial & 1 & 2 & 3 \\
 \hline
-Resistance, R $(\Omega)$ & & & \\
+Resistance, R $(\Omega)$ & 26.55 & 26.87 & 25.6\\
 \hline
 \end{tabular}
-\\Average Resistance = 
-\\Percent Error = 
+\\Average Resistance $(\Omega)$ = 26.34
+\\Percent Error = 2.9\%
 \end{center}
 
 \begin{center}
 \begin{tabular}
 {|m{9em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Rheostat Setting & 1 & 2 & 3 \\
+Trial & 1 & 2 & 3 \\
 \hline
-Resistance, R $(\Omega)$ & & & \\
+Resistance, R $(\Omega)$ & 76.8 & 76.56 & 78.55 \\
 \hline
 \end{tabular}
-\\Average Resistance = 
-\\Percent Error = 
+\\Average Resistance $(\Omega)$ = 77.3
+\\Percent Error = 3.48\%
 \end{center}
 
-
-Our percent error was fairly high for the first set of data, especially as the mass was lower, most likely indicating an issue with the time measurement, as it was faster at the start, at which points the percent of error was far higher. 
-
-Other sources of error that could have occured was within the pulley mechanism itself, estimating the frictional mass manually, which created room for error, and it assumes that the pulley itself worked as intended, although there was the chance of it slipping or catching at any point. In addition, there is the possibility of drag force slowing the measured acceleratin, which is consistent with the data, except in the 1st and 5th trial.
-
-Finally, the equations themselves assumed a point mass, while in actuality, as the masses got higher, they became less and less point-like in shape, interfering in the data.
+The most likely cause of error is compounding loss of specificity due to the incorrect settings used on the multimeters. In addition, since the large resistors tend to have greater percent error than the other resistors, it indicates the measurement for that resistor's resistance may have been too low in some regard. Otherwise though, the overall percent error for each of the pieces of data was relatively low, such that it is mainly accurately done.
 
 \section*{Conclusion}
 
-The acceleration as the mass on each side before frictional mass was added increased from 0.05 to 0.15 to 0.25 to 0.35, went from 1.015 $m/s^2$ with 58.59\% error, to 0.359 $m/s^2$ with 23.62 \% error, to 0.196 $m/s^2$ with 27.4 \% error, to 0.105 $m/s^2$ with 19.7\% error.
-
-The acceleration as the mass difference increased from 2 g to 6 g to 10 g to 20 g, went from 0.0196 $m/s^2$ with 12 \% error, to 0.0715 $m/s^2$ with 18.5 \% error, to 0.137 $m/s^2$ with 13.3 \% error, to 0.283 $m/s^2$ with 15.01 \% error. 
+The measured average resistance of the small resistor with the voltmeter needing to be accounted for, with an actual resistance of $50.2 \Omega$, was $53.21 \Omega$ with a percent error of 5.66\%. The measured average resistance of the small resistor with the ammeter needing to be accounted for, with an actual resistance of $50.2 \Omega$, was $52.19 \Omega$ with a percent error of 3.96\%. The measured average resistance of the large resistor with the voltmeter needing to be accounted for, with an actual resistance of $74.7 \Omega$, was $79.09 \Omega$ with a percent error of 5.88\%. The measured average resistance of the large resistor with the ammeter needing to be accounted for, with an actual resistance of $74.7 \Omega$, was $80.02 \Omega$ with a percent error of 7.12\%. The measured average resistance of the small resistor by the wheatstone bridge, with an actual resistance of $25.6 \Omega$, was $26.34 \Omega$ with a percent error of 2.9\%. The measured average resistance of the large resistor by the wheatstone bridge, with an actual resistance of $74.7 \Omega$, was $77.3 \Omega$ with a percent error of 3.48\%.
 
 \end{document}
