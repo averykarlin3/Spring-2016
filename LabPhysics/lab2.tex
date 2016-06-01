@@ -14,49 +14,24 @@
 \rhead{\thepage}
 \cfoot{}
 
-\title{The Measurement of Resistance: Ammeter-Voltmeter Methods and Wheatstone Bridge Method \\ \ \\ \large Lab \#1}
-\author{Name: Avery Karlin \\ Partner: Ethan Chang}
+\title{The RC Time Constant \\ \ \\ \large Lab \#1}
+\author{Name: Avery Karlin \\ Partner: Jeffrey Zou}
 \date{}
 \begin{document}
 
 \maketitle
 
 \begin{center}
-\LARGE The Measurement of Resistance: Ammeter-Voltmeter Methods and Wheatstone Bridge Method
+\LARGE The RC Time Constant
 \end{center}
 
 \section*{Objective}
-The objective of the lab is to measure the resistance of unknown resistors by means of both the Wheatstone bridge of balancing the resistance of both sides of the bridge, and by a combined ammeter and voltmeter.
+The objective of the lab is to measure the time constant of an RC circuit based on the rate of charging and discharging.
 
 \section*{Introduction}
-The measuring of resistance can be done by several methods, the first of which depends on Ohm's Law, stating $R = \frac{V}{I}$. On the other hand, since the voltmeter, placed in parallel such that the voltage is equal, takes away a portion of the current, or because the ammeter, placed in series such that the current is equal, takes away a portion of the voltage, the measurement is not exact. If the resistance of the voltmeter greatly exceeds that of the resistor, it will not interfere, while if the resistance of the ammeter is vastly less, it will not interfere. Otherwise, for the voltmeter impacting the current, $R = \frac{V}{I_R} = \frac{V}{I - I_v} = \frac{V}{I - \frac{V}{R_V}}$, where $I_R$ is the voltage through the resistor, $I_v$ is the current through the voltmeter, and $R_V$ is the resistance of the voltmeter. For the ammeter impacting the voltage, $R = \frac{V_R}{I} = \frac{V - V_A}{I} = \frac{V - R_AI}{I} = \frac{V}{I} - R_A$.
+Capacitors are defined by the equation $Q = CV$, such that the voltage of the capacitor is directly proportional to the charge, with the proportionality constant called the capacitance. Similar, resistor voltage is defined by Ohm's Law, such that $V = IR$. Thus, for a circuit purely with a resistor and a capacitor (RC circuit), the differential equation by Kirchoff's Voltage Law states that for charging (connected to the battery), $V_0 = \frac{Q}{C} + R\frac{dQ}{dt}$, and when discharging (disconnected from the battery), $0 = \frac{Q}{C} + r\frac{dQ}{dt}$. Thus, this can be solved to get an equation for charging, $V = V_0(1 - e^{\frac{-t}{RC}}) = V_0(1 - e^{\frac{-t}{\tau}}$ and for discharging, $V = V_0e^{\frac{-t}{RC}} = V_0e^{\frac{-t}{\tau}}$, where $\tau = RC$, called the time constant for an RC circuit.
 
-As a result, it can be seen that as the voltmeter resistance approaches infinity, the resistance approaches $\frac{V}{I}$ for the former case, such that it plays no effect, and likewise, as the ammeter resistance approaches zero, the resistance approaches the same, such that there is no effect. This is due to the fact that as voltmeter resistance is infinite, the resistance through the other path is so far below, that all the current moves through there, while the current through the voltmeter is negligable. As the ammeter resistance approaches 0, no voltage is lost passing through it as a result, since it acts like a normal wire, thus having no effect.
-
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=1, angle=0]{circuit1.jpg}
-\vspace*{0cm}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=1, angle=0]{circuit2.jpg}
-\vspace*{0cm}
-\end{figure}
-
-The other method of calculating resistance is the Wheatstone Bridge method, which can be done either by the slide-wire method or the four-resistor method. The four resistor method places two known resistors in series on one side of the bridge, and a variable resistor and the unknown on the other side, with a galvanometer/ammeter connected from the center of both sides. The variable resistor can then be modified such that the first resistor on each side has an equal voltage to the other ($I_1R_1 = I_2R_V$) and the second on each has an equal voltage ($I_2R_1 = I_2R_X$), where $R_V$ is the variable resistance and $R_X$ is the unknown resistor. Thus, at that point $R_X = \frac{R_2R_V}{R_1}$.
-
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=1, angle=0]{circuit3.jpg}
-\vspace*{0cm}
-\end{figure}
-
-The slide-wire method uses a slide wire resistor instead of the two known resistors and a known resistor instead of the variable one. As a result, since the resistance of each part of the slide wire resistor is proportional to the length, it can similarly be found that $R_X = \frac{L_2R_K}{L_1}$, where $R_K$ is the known resistor, $L_1$ is the length of the wire parallel to the known resistor, and $L_2$ is the length parallel to the unknown resistor.
+These equations can be modified such that for charging, $-ln(\frac{V_0 - V}{V_0}) = -\frac{t}{RC}$ and for discharging, $-ln(\frac{V}{V_0}) = -\frac
 
 \section*{Procedures and Results}
 
