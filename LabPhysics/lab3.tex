@@ -10,11 +10,11 @@
 \usepackage{indentfirst}
 %\usepackage{wrapfig}
 
-\lhead{Lab \#1}
+\lhead{Lab \#3}
 \rhead{\thepage}
 \cfoot{}
 
-\title{The RC Time Constant \\ \ \\ \large Lab \#1}
+\title{The RC Time Constant \\ \ \\ \large Lab \#3}
 \author{Name: Avery Karlin \\ Partner: Jeffrey Zou}
 \date{}
 \begin{document}
@@ -31,126 +31,90 @@ The objective of the lab is to measure the time constant of an RC circuit based 
 \section*{Introduction}
 Capacitors are defined by the equation $Q = CV$, such that the voltage of the capacitor is directly proportional to the charge, with the proportionality constant called the capacitance. Similar, resistor voltage is defined by Ohm's Law, such that $V = IR$. Thus, for a circuit purely with a resistor and a capacitor (RC circuit), the differential equation by Kirchoff's Voltage Law states that for charging (connected to the battery), $V_0 = \frac{Q}{C} + R\frac{dQ}{dt}$, and when discharging (disconnected from the battery), $0 = \frac{Q}{C} + r\frac{dQ}{dt}$. Thus, this can be solved to get an equation for charging, $V = V_0(1 - e^{\frac{-t}{RC}}) = V_0(1 - e^{\frac{-t}{\tau}}$ and for discharging, $V = V_0e^{\frac{-t}{RC}} = V_0e^{\frac{-t}{\tau}}$, where $\tau = RC$, called the time constant for an RC circuit.
 
-These equations can be modified such that for charging, $-ln(\frac{V_0 - V}{V_0}) = -\frac{t}{RC}$ and for discharging, $-ln(\frac{V}{V_0}) = -\frac
+These equations can be modified such that for charging, $-ln(\frac{V_0 - V}{V_0}) = -\frac{t}{RC}$ and for discharging, $-ln(\frac{V}{V_0}) = -\frac{t}{RC}$. Since the left-hand side here forms a constant term and the right is a constant multiplied by t, it forms a line with the slope equal to $\frac{-1}{RC}$.
 
 \section*{Procedures and Results}
 
-First, the Ammeter-Voltmeter methods are used with a small resistor, first creating a circuit such that the ammeter reading is slightly higher than actual, second so that the voltmeter reading is slightly higher than actual, with an additional variable resistor, a rheostat in this case using only one of the resistors, separate from the resistor being measured, in series. The resistance of the ammeter and the voltmeter can be separately measured by an ohmmeter, so that they can be taken into account. The voltage and current across the resistor can thus be found as well. It is then taken for three different rheostat resistances, such that the voltage and current through the unknown resistor varies. It is then redone by the same means for a large resistor.
+First, the power source is connected to a capacitor and then a variable resistor set to some value, joined back to the power source, with a voltmeter connected to the capacitor to measure the capacitor's charging voltage. After the power source is activated, it is timed with a stopwatch as it charges, recording the voltage as time increases, until the voltage of the capacitor is negligibly less than the battery, and it can't increase further. After, it is disconnected from the power source, such that the resistor is directly connected to the capacitor, such that it acts as the power source, discharging as voltage is lost through the resistor, recording the voltage as time increases again until it has only a negligible amount of voltage remaining. This is then repeated for a capacitor of a different capacitance.
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.12, angle=90]{lab11.jpg}
+\includegraphics[scale=0.12, angle=90]{lab31.jpg}
 \vspace*{0cm}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.12, angle=270]{lab12.jpg}
+\includegraphics[scale=0.12, angle=270]{lab32.jpg}
 \vspace*{0cm}
 \end{figure}
 
-The slide-wire form of the Wheatstone Bridge is then made in a variation, with a rheostat used as the two unknown resistors, due to acting as two varying resistors in series, with a divider between, similar to a slide-wire. It is measured for some small and large unknown resistor, taken for three different known resistors with each part of the rheostat resistance measured by an ohmmeter when there is no current passing through the bridge, measured by an ammeter.
-
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=0.7, angle=270]{lab13.jpg}
-\vspace*{0cm}
-\end{figure}
-
-\underline{Small Resistor:}
+\underline{Capacitor 1:}
 \begin{center}
-$$R_V \text{(Voltmeter Resistance)}= 10 M\Omega$$
-$$R_X \text{(Expected Resistance)}= 50.2 \Omega$$
+$$C = 5100 \mu F$$
+$$R = 1350 \Omega$$
 \begin{tabular}
-{|m{9em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{9em}|m{9em}|}
 \hline
-Rheostat Setting & 1 & 2 & 3 \\
+Charging Time (s) & Charging Voltage (V) & Discharging Voltage (V) \\
 \hline
-Current, I (A) & 0.048 & 0.039 & 0.031 \\
+0 & 0 & 8.87\\
 \hline
-Voltage, V (V) & 2.6 & 2.1 & 1.6 \\
+4 & 3.48 & 5.48\\
+\hline
+8 & 5.47 & 3.37\\
+\hline
+12 & 6.8 & 2.12\\
+\hline
+16 & 7.53 & 1.43\\
+\hline
+20 & 8.06 & 0.9\\
+\hline
+24 & 8.31 & 0.6\\
+\hline
+28 & 8.51 & 0.38\\
+\hline
+32 & 8.63 & 0.26\\
+\hline
+36 & 8.72 & 0.17\\
+\hline
+40 & 8.77 & 0.12\\
 \hline
 \end{tabular}
 \end{center}
 
+\underline{Capacitor 2:}
 \begin{center}
-$$R_A \text{(Ammeter Resistance)}= 0.48 \Omega$$
-$$R_X \text{(Expected Resistance)}= 50.2 \Omega$$
+$$C = 4200 \mu F$$
+$$R = 1350 \Omega$$
 \begin{tabular}
-{|m{9em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{9em}|m{9em}|}
 \hline
-Rheostat Setting & 1 & 2 & 3 \\
+Charging Time (s) & Charging Voltage (V) & Discharging Voltage (V) \\
 \hline
-Current, I (A) & 0.048 & 0.039 & 0.032 \\
+0 & 0 & 8.91\\
 \hline
-Voltage, V (V) & 2.6 & 2.1 & 1.6 \\
+4 & 5.18 & 4.74\\
 \hline
-\end{tabular}
-\end{center}
-
-\underline{Large Resistor:}
-\begin{center}
-$$R_V \text{(Voltmeter Resistance)}= 10 M\Omega$$
-$$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
-\begin{tabular}
-{|m{9em}|m{7em}|m{7em}|m{7em}|}
+8 & 7.16 & 2.30\\
 \hline
-Rheostat Setting & 1 & 2 & 3 \\
+12 & 7.84 & 1.13\\
 \hline
-Current, I (A) & 0.033 & 0.029 & 0.024 \\
+16 & 8.26 & 0.6\\
 \hline
-Voltage, V (V) & 2.6 & 2.3 & 1.9 \\
+20 & 8.60 & 0.33\\
 \hline
-\end{tabular}
-\end{center}
-
-\begin{center}
-$$R_A \text{(Ammeter Resistance)}= 0.48 \Omega$$
-$$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
-\begin{tabular}
-{|m{9em}|m{7em}|m{7em}|m{7em}|}
+24 & 8.75 & 0.16\\
 \hline
-Rheostat Setting & 1 & 2 & 3 \\
+28 & 8.81 & 0.10\\
 \hline
-Current, I (A) & 0.032 & 0.029 & 0.021 \\
+32 & 8.87 & 0.06\\
 \hline
-Voltage, V (V) & 2.6 & 2.3 & 1.7 \\
+36 & 8.89 & 0.03\\
 \hline
-\end{tabular}
-\end{center}
-
-\underline{Wheatstone Bridge:}
-\begin{center}
-$$R_X \text{(Expected Resistance)}= 25.6 \Omega$$
-\begin{tabular}
-{|m{9em}|m{7em}|m{7em}|m{7em}|}
-\hline
-Trial & 1 & 2 & 3 \\
-\hline
-Known Resistor, $R_K (\Omega)$ & 50.2 & 74.6 & 25.6 \\
-\hline
-Varying Resistor 1, $R_1 (\Omega)$ & 24.2 & 26.1 & 17.5 \\
-\hline
-Varying Resistor 2, $R_2 (\Omega)$ & 12.8 & 9.4 & 17.5 \\
-\hline
-\end{tabular}
-\end{center}
-
-\begin{center}
-$$R_X \text{(Expected Resistance)}= 74.7 \Omega$$
-\begin{tabular}
-{|m{9em}|m{7em}|m{7em}|m{7em}|}
-\hline
-Trial & 1 & 2 & 3 \\
-\hline
-Known Resistor, $R_K (\Omega)$ & 25.6 & 50.2 & 74.6 \\
-\hline
-Varying Resistor 1, $R_1 (\Omega)$ & 8.7 & 13.9 & 17 \\
-\hline
-Varying Resistor 2, $R_2 (\Omega)$ & 26.1 & 21.2 & 17.9 \\
+40 & 8.90 & 0.02\\
 \hline
 \end{tabular}
 \end{center}
