@@ -26,59 +26,99 @@
 \end{center}
 
 \section*{Objective}
-The objective of the lab is to measure the time constant of an RC circuit based on an oscilloscope.
+The objective of the lab is to practice using the microwave optics system, measure the relationship between distance and microwave strength, and test the law of reflection.
 
 \section*{Introduction}
-As written about in previous labs, for some charging capacitor in an RC circuit, meaning a circuit with a resistor, a capacitor, and a DC power source, it can be derived that $V = V_0(1 - e^{\frac{-t}{RC}}) = V_0(1 - e^{\frac{-t}{\tau}})$, where $\tau = RC$, signifying the time constant for the RC circuit. Since exponential functions must take a unitless input, the time constant as a result must also have a unit of seconds. As a result, we can say that when $t = \tau$, $V = V_0(1 - e^{-1}) = V_0(0.63)$, such that at that point, the voltage is equal to 63\% of the maximum voltage it will achieve. Similarly, the discharging is described by the equation $V = V_0e^{\frac{-t}{RC}} = V_0e^{\frac{-t}{\tau}}$.
+Electromagnetic radiation is perpendicular transverse waves of magnetic and electric fields, all moving at the speed of light ($3 * 10^8$ m/s), ranging in type based on frequency and energy, with higher frequency meaning higher energy. The most high energy is gamma radiation, produced by nuclear reactions only, unlike all other forms which are produced by electronic movement. The next longest is x-rays, used in medical testing, followed by ultraviolet, then visible light (the only type humans can see), followed by infrared (used for night vision, based on black body radiation), then microwave radiation, and finally radio waves (used for all electronic communication signals).
 
-In an AC circuit, on the other hand, there does not need to be a cyclical current flow, due to it being unable to travel infinitely, but rather reversing itself after a brief period of time, discharging the capacitor again, such that it can be connected in series, creating alternating charging and discharging. As a result though, the time it takes to reach 63\% of the maximum height can be found as tau.
+Electromagnetic radiation can be polarized by a polarizer, only allowing waves of a specific orientation through, such that perpendicular polarizers block all waves as a result. Microwave strength is inversely proportional to the square of the distance, such that it decreases exponentially. In addition, the law of reflection states that if the radiation is reflected, the angle of incidence is equal to the angle of reflection, such that the microwave radiation picked up is greatest at that angle from it.
 
 \section*{Procedures and Results}
 
-First, the scale of voltage per division must be set such that the total graph moves through 8 divisions vertically, with the frequency generator set to some constant frequency in a square wave pattern, such that the voltage is alternating but not varying, and such that 5 divisions is approximately 63\% of the total height. After, the circuit is set up fully in series, without an ending connection from the oscilloscope back to the AC. The variable resistor and capacitor are then set to some value, measuring the number of horizontal divisions to move up 5 vertical, then repeating for two different resistances and one other capacitance. 
+First, 
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.4]{lab51.jpg}
+\includegraphics[scale=1]{lab61.jpg}
 \vspace*{0cm}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.6]{lab52.jpg}
+\includegraphics[scale=1]{lab62.jpg}
 \vspace*{0cm}
 \end{figure}
 
-\underline{Resistance Change:}
+\underline{Wave Strength vs Distance:}
 \begin{center}
-$$C = 1 nF$$
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{12em}|}
 \hline
-Trial & Resistance ($\Omega$) & Divisions per 0.63 Rise & Sweep Time/Div (ms/div)\\
+Distance (m) & Microwave Radiation Strength (M) \\
 \hline
-1 & 10k & 2.1 & 2\\
+0.4 & \\
 \hline
-2 & 5k & 2.1 & 2\\
+0.5 & \\
 \hline
-3 & 3k & 2.1 & 2\\
+0.6 & \\
+\hline
+0.7 & \\
+\hline
+0.8 & \\
+\hline
+0.9 & \\
+\hline
+1 & \\
 \hline
 \end{tabular}
 \end{center}
 
-\underline{Capacitance Change:}
+\underline{Wave Strength vs Distance:}
 \begin{center}
-$$R = 10 k\Omega$$
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{12em}|}
 \hline
-Trial & Capacitance (pF) & Divisions per 0.63 Rise & Sweep Time/Div (ms/div)\\
+Distance (m) & Microwave Radiation Strength (M) \\
 \hline
-1 & 700 & 2.7 & 2\\
+0.4 & \\
 \hline
-2 & 400 & 1.2 & 2\\
+0.5 & \\
+\hline
+0.6 & \\
+\hline
+0.7 & \\
+\hline
+0.8 & \\
+\hline
+0.9 & \\
+\hline
+1 & \\
+\hline
+\end{tabular}
+\end{center}
+
+\underline{Wave Strength vs Distance:}
+\begin{center}
+\begin{tabular}
+{|m{9em}|m{12em}|}
+\hline
+Distance (m) & Microwave Radiation Strength (M) \\
+\hline
+0.4 & \\
+\hline
+0.5 & \\
+\hline
+0.6 & \\
+\hline
+0.7 & \\
+\hline
+0.8 & \\
+\hline
+0.9 & \\
+\hline
+1 & \\
 \hline
 \end{tabular}
 \end{center}
@@ -90,53 +130,29 @@ $$RC_{exp} \text{(Trial 1, Resistance)} = \text{Divisions per 0.63 rise} * \text
 $$RC_{calc} \text{(Trial 1, Resistance)} = R * C = 10k \Omega * 1 nF = 10 ms$$
 $$\text{Percent Error (Trial 1, Resistance)} = \frac{\text{$|$Expected - Actual$|$} * 100\%}{\text{Expected}} = \frac{|4.2 - 10| * 100\%}{10} = 58\%$$
 
-\underline{Resistance Change:}
+\underline{Wave Strength vs Distance:}
 \begin{center}
 \begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|}
+{|m{9em}|m{12em}|}
 \hline
-Trial & $RC_{exp}$ (ms) & $RC_{calc}$ (ms)& Percent Error\\
+Microwave Radiation Strength$^2 (M^2)$ & \\
 \hline
-1 & 4.2 & 10 & 58\\
+0.4 & \\
 \hline
-2 & 4.2 & 5 & 16\\
+0.5 & \\
 \hline
-3 & 4.2 & 3 & 40\\
+0.6 & \\
 \hline
-\end{tabular}
-$$\text{Slope of $\tau$ vs R} = 0 F$$
-$$\text{Percent Difference of Slope and C} = 100\%$$
-\end{center}
-
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=0.8]{graph51.jpg}
-\vspace*{0cm}
-\end{figure}
-
-\underline{Capacitance Change:}
-\begin{center}
-\begin{tabular}
-{|m{7em}|m{7em}|m{7em}|m{7em}|}
+0.7 & \\
 \hline
-Trial & $RC_{exp}$ & $RC_{calc}$ & Percent Error\\
+0.8 & \\
 \hline
-1 & 5.4 & 7 & 22.9\\
+0.9 & \\
 \hline
-2 & 2.4 & 4 & 40\\
+1 & \\
 \hline
 \end{tabular}
-$$\text{Slope of $\tau$ vs C} = 3000 \Omega$$
-$$\text{Percent Difference of Slope and R} = 70\%$$
 \end{center}
-
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=0.8]{graph52.jpg}
-\vspace*{0cm}
-\end{figure}
 
 For the change in resistance, the main error seems to be that resistance doesn't impact the time constant experimentally. This is due to the resistance being affected by the frequency, such that the change in resistance for the same frequency has to be far greater to impact the experimental time constant. As a result, for the same frequency and capacitance, within a small region of changes in the resistance, the time constant is the same experimentally for RC circuits. In addition, difficulty operating the oscilloscope itself can account for a portion of the error. In addition, additional resistance due to non ideal wires could bring the experimental time constant up relative to the actual time constant to some degree, though this appears to have had a generally minor effect. 
 
