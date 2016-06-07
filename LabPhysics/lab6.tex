@@ -35,7 +35,13 @@ Electromagnetic radiation can be polarized by a polarizer, only allowing waves o
 
 \section*{Procedures and Results}
 
-First, 
+First, the transmitter and receiver are hooked onto the fixed arm, which is then fixed on the sliding measuring bar. After, the receiver must be set to 30x and then calibrated by the variable sensitivity dial, until the reading is 1 for 0.4 distance between the transmitter and receiver. It is then measured as the distance between them increases by 10 cm intervals until there is 1 meter between, recording the reading. 
+
+A reflector, parallel to the axis between the transmitter and receiver, has a reflector then moved closer to it to determine the change in readings, increasing as the reflector moves closer, due to the waves moving away from the axis reflecting back towards it.
+
+After, the hand screw connecting the receiver to the fixed arm is loosened, such that it can be rotated, receiving from the same direction, but in different orientations, watching the change in reading on it. It is thus seen that when the orientations are perpendicular to each other, rather than parallel or anti-parallel, the readings on the receiver is 0, at the maximum when parallel or anti-parallel.
+
+
 
 \begin{figure}[h]
 \centering
@@ -54,71 +60,81 @@ First,
 \underline{Wave Strength vs Distance:}
 \begin{center}
 \begin{tabular}
-{|m{9em}|m{12em}|}
+{|m{9em}|m{18em}|}
 \hline
 Distance (m) & Microwave Radiation Strength (M) \\
 \hline
-0.4 & \\
+0.4 & 1\\
 \hline
-0.5 & \\
+0.5 & 0.58\\
 \hline
-0.6 & \\
+0.6 & 0.38\\
 \hline
-0.7 & \\
+0.7 & 0.3\\
 \hline
-0.8 & \\
+0.8 & 0.18\\
 \hline
-0.9 & \\
+0.9 & 0.08\\
 \hline
-1 & \\
+1 & 0.04\\
 \hline
 \end{tabular}
 \end{center}
 
-\underline{Wave Strength vs Distance:}
+\underline{Wave Strength vs Angle:}
 \begin{center}
 \begin{tabular}
-{|m{9em}|m{12em}|}
+{|m{9em}|m{18em}|}
 \hline
-Distance (m) & Microwave Radiation Strength (M) \\
+Angles $(^o)$ & Microwave Radiation Strength (M) \\
 \hline
-0.4 & \\
+0 & 1\\
 \hline
-0.5 & \\
+10 & 0.52\\
 \hline
-0.6 & \\
+20 & 0.36\\
 \hline
-0.7 & \\
+30 & 0.04\\
 \hline
-0.8 & \\
+40 & 0.02\\
 \hline
-0.9 & \\
+50 & 0.01\\
 \hline
-1 & \\
+60 & 0\\
+\hline
+70 & 0\\
+\hline
+80 & 0\\
+\hline
+90 & 0\\
 \hline
 \end{tabular}
 \end{center}
 
-\underline{Wave Strength vs Distance:}
+\underline{Angle of Incidence vs Angle of Reflection:}
 \begin{center}
 \begin{tabular}
-{|m{9em}|m{12em}|}
+{|m{12em}|m{12em}|}
 \hline
-Distance (m) & Microwave Radiation Strength (M) \\
+Angle of Incidence $(^o)$ & Angle of Reflection $(^o)$ \\
 \hline
-0.4 & \\
+10 & 10\\
 \hline
-0.5 & \\
+20 & 20\\
 \hline
-0.6 & \\
+30 & 27.5\\
 \hline
-0.7 & \\
+40 & 35\\
 \hline
-0.8 & \\
+50 & 45\\
 \hline
-0.9 & \\
+60 & 65\\
 \hline
-1 & \\
+70 & 60\\
+\hline
+80 & 70\\
+\hline
+90 & 70\\
 \hline
 \end{tabular}
 \end{center}
@@ -126,38 +142,37 @@ Distance (m) & Microwave Radiation Strength (M) \\
 \section*{Discussion}
 Sample calculations for the non-measured data are as shown using the formulas found above:
 
-$$RC_{exp} \text{(Trial 1, Resistance)} = \text{Divisions per 0.63 rise} * \text{Sweep Time per Div} = 2.1 * 2 = 4.2 ms$$
-$$RC_{calc} \text{(Trial 1, Resistance)} = R * C = 10k \Omega * 1 nF = 10 ms$$
-$$\text{Percent Error (Trial 1, Resistance)} = \frac{\text{$|$Expected - Actual$|$} * 100\%}{\text{Expected}} = \frac{|4.2 - 10| * 100\%}{10} = 58\%$$
+$$\text{Microwave Radiation Strength * Distance (0.4 m Distance)} = R * M = 0.4 * 1 = 0.4 m$$
+$$\text{Microwave Radiation Strength * Distance$^2$ (0.4 m Distance)} = R^2 * M = 0.4^2 * 1 = 0.16 m^2$$
 
 \underline{Wave Strength vs Distance:}
 \begin{center}
 \begin{tabular}
-{|m{9em}|m{12em}|}
+{|m{15em}|m{15em}|}
 \hline
-Microwave Radiation Strength$^2 (M^2)$ & \\
+Microwave Radiation Strength * Distance (m) & Microwave Radiation Strength * Distance$^2$ $(m^2)$ \\
 \hline
-0.4 & \\
+0.4 & 0.16\\
 \hline
-0.5 & \\
+0.29 & 0.145\\
 \hline
-0.6 & \\
+0.228 & 0.137\\
 \hline
-0.7 & \\
+0.21 & 0.147\\
 \hline
-0.8 & \\
+0.144 & 0.115\\
 \hline
-0.9 & \\
+0.072 & 0.065\\
 \hline
-1 & \\
+1 & 0.04\\
 \hline
 \end{tabular}
 \end{center}
 
-For the change in resistance, the main error seems to be that resistance doesn't impact the time constant experimentally. This is due to the resistance being affected by the frequency, such that the change in resistance for the same frequency has to be far greater to impact the experimental time constant. As a result, for the same frequency and capacitance, within a small region of changes in the resistance, the time constant is the same experimentally for RC circuits. In addition, difficulty operating the oscilloscope itself can account for a portion of the error. In addition, additional resistance due to non ideal wires could bring the experimental time constant up relative to the actual time constant to some degree, though this appears to have had a generally minor effect. 
+
 
 \section*{Conclusion}
 
-The time constant for the resistance changing trials, for a calculated RC of 10 ms was 4.2 ms with 58\% error, 5 ms was 4.2 ms with 16 \% error, and 3 ms was 4.2 ms with 40\% error. Thus, the slope of $\tau$ vs R was 0 F to the actual capacitance of 1 nF for a percent error of 100\%. The time constant for the capacitance changing trials, for a calculated RC of 7 ms was 5.4 ms with 22.9\% error, and 4 ms was 2.4 ms with 40\% error. Thus, the slope of $\tau$ vs C was 3 $k\Omega$ to the actual resistance of 10 $k\Omega$ for a percent error of 70\%.
+
 
 \end{document}
