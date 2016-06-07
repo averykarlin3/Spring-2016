@@ -35,12 +35,12 @@ In an AC circuit, on the other hand, there does not need to be a cyclical curren
 
 \section*{Procedures and Results}
 
-First, 
+First, the scale of voltage per division must be set such that the total graph moves through 8 divisions vertically, with the frequency generator set to some constant frequency in a square wave pattern, such that the voltage is alternating but not varying, and such that 5 divisions is approximately 63\% of the total height. After, the circuit is set up fully in series, without an ending connection from the oscilloscope back to the AC. The variable resistor and capacitor are then set to some value, measuring the number of horizontal divisions to move up 5 vertical, then repeating for two different resistances and one other capacitance. 
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.6]{lab51.jpg}
+\includegraphics[scale=0.4]{lab51.jpg}
 \vspace*{0cm}
 \end{figure}
 
@@ -51,70 +51,34 @@ First,
 \vspace*{0cm}
 \end{figure}
 
-\underline{Capacitor 1:}
+\underline{Resistance Change:}
 \begin{center}
-$$C = 5100 \mu F$$
-$$R = 1350 \Omega$$
+$$C = 1 nF$$
 \begin{tabular}
-{|m{9em}|m{9em}|m{9em}|}
+{|m{7em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Charging Time (s) & Charging Voltage (V) & Discharging Voltage (V) \\
+Trial & Resistance ($\Omega$) & Divisions per 0.63 Rise & Sweep Time/Div (ms/div)\\
 \hline
-0 & 0 & 8.87\\
+1 & 10k & 2.1 & 2\\
 \hline
-4 & 3.48 & 5.48\\
+2 & 5k & 2.1 & 2\\
 \hline
-8 & 5.47 & 3.37\\
-\hline
-12 & 6.8 & 2.12\\
-\hline
-16 & 7.53 & 1.43\\
-\hline
-20 & 8.06 & 0.9\\
-\hline
-24 & 8.31 & 0.6\\
-\hline
-28 & 8.51 & 0.38\\
-\hline
-32 & 8.63 & 0.26\\
-\hline
-36 & 8.72 & 0.17\\
-\hline
-40 & 8.77 & 0.12\\
+3 & 3k & 2.1 & 2\\
 \hline
 \end{tabular}
 \end{center}
 
-\underline{Capacitor 2:}
+\underline{Capacitance Change:}
 \begin{center}
-$$C = 4200 \mu F$$
-$$R = 1350 \Omega$$
+$$R = 10 k\Omega$$
 \begin{tabular}
-{|m{9em}|m{9em}|m{9em}|}
+{|m{7em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Charging Time (s) & Charging Voltage (V) & Discharging Voltage (V) \\
+Trial & Capacitance (pF) & Divisions per 0.63 Rise & Sweep Time/Div (ms/div)\\
 \hline
-0 & 0 & 8.91\\
+1 & 700 & 2.7 & 2\\
 \hline
-4 & 5.18 & 4.74\\
-\hline
-8 & 7.16 & 2.30\\
-\hline
-12 & 7.84 & 1.13\\
-\hline
-16 & 8.26 & 0.6\\
-\hline
-20 & 8.60 & 0.33\\
-\hline
-24 & 8.75 & 0.16\\
-\hline
-28 & 8.81 & 0.10\\
-\hline
-32 & 8.87 & 0.06\\
-\hline
-36 & 8.89 & 0.03\\
-\hline
-40 & 8.90 & 0.02\\
+2 & 400 & 1.2 & 2\\
 \hline
 \end{tabular}
 \end{center}
@@ -122,121 +86,62 @@ Charging Time (s) & Charging Voltage (V) & Discharging Voltage (V) \\
 \section*{Discussion}
 Sample calculations for the non-measured data are as shown using the formulas found above:
 
-$$\text{Average Slope (Capacitor 1)} = \frac{\text{Charging Slope} + \text{Discharging Slope}}{2} = \frac{-0.108 - 0.11}{2} = -0.109 1/F*s$$
-$$RC \text{(Measured, Capacitor 1)} = \frac{-1}{\text{Average Slope}} = \frac{-1}{-0.109} = 9.174 F*s$$
-$$RC \text{(Calculated, Capacitor 1)} = R*C = 5100*10^-6*1350 = 6.885 F*s$$
-$$\text{Percent Error (Capacitor 1)} = \frac{\text{$|$Expected - Actual$|$} * 100\%}{\text{Expected}} = \frac{|6.885 - 9.174| * 100\%}{6.885} = 33.2\%$$
+$$RC_{exp} \text{(Trial 1, Resistance)} = \text{Divisions per 0.63 rise} * \text{Sweep Time per Div} = 2.1 * 2 = 4.2 ms$$
+$$RC_{calc} \text{(Trial 1, Resistance)} = R * C = 10k \Omega * 1 nF = 10 ms$$
+$$\text{Percent Error (Trial 1, Resistance)} = \frac{\text{$|$Expected - Actual$|$} * 100\%}{\text{Expected}} = \frac{|4.2 - 10| * 100\%}{10} = 58\%$$
 
-\underline{Capacitor 1:}
+\underline{Resistance Change:}
 \begin{center}
-$V_0 = 8.87 V$
 \begin{tabular}
-{|m{6em}|m{6em}|m{6em}|m{6em}|}
+{|m{7em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Charging Time (s) & Charging $V_0 - V$ & Charging $ln(V_0 - V)$ & Discharging $ln(V)$ \\
+Trial & $RC_{exp}$ (ms) & $RC_{calc}$ (ms)& Percent Error\\
 \hline
-0 & 8.87 & 2.18 & 2.18\\
+1 & 4.2 & 10 & 58\\
 \hline
-4 & 5.39 & 1.68 & 1.7\\
+2 & 4.2 & 5 & 16\\
 \hline
-8 & 3.4 & 1.22 & 1.21\\
-\hline
-12 & 2.07 & 0.73 & 0.75\\
-\hline
-16 & 1.34 & 0.29 & 0.36\\
-\hline
-20 & 0.81 & -0.21 & -0.11\\
-\hline
-24 & 0.56 & -0.58 & -0.51\\
-\hline
-28 & 0.36 & -1.02 & -0.97\\
-\hline
-32 & 0.24 & -1.43 & -1.35\\
-\hline
-36 & 0.15 & -1.9 & -1.77\\
-\hline
-40 & 0.10 & -2.3 & -2.12\\
+3 & 4.2 & 3 & 40\\
 \hline
 \end{tabular}
-$$\text{Charging Slope} = -0.11 1/F*s$$
-$$\text{Discharging Slope} = -0.108 1/F*s$$
-$$\text{Average Slope} = -0.109 1/F*s$$
-$$RC \text{(Measured)} = 9.174 F*s$$
-$$RC \text{(Calculated)} = 6.885$$
-$$\text{Percent Error} = 33.2\%$$
+$$\text{Slope of $\tau$ vs R} = 0 F$$
+$$\text{Percent Difference of Slope and C} = 100\%$$
 \end{center}
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.6]{graph31.jpg}
+\includegraphics[scale=0.8]{graph51.jpg}
 \vspace*{0cm}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=0.6]{graph32.jpg}
-\vspace*{0cm}
-\end{figure}
-
-\underline{Capacitor 2:}
+\underline{Capacitance Change:}
 \begin{center}
-$V_0 = 8.91 V$
 \begin{tabular}
-{|m{6em}|m{6em}|m{6em}|m{6em}|}
+{|m{7em}|m{7em}|m{7em}|m{7em}|}
 \hline
-Charging Time (s) & Charging $V_0 - V$ & Charging $ln(V_0 - V)$ & Discharging $ln(V)$ \\
+Trial & $RC_{exp}$ & $RC_{calc}$ & Percent Error\\
 \hline
-0 & 8.91 & 2.19 & 2.19\\
+1 & 5.4 & 7 & 22.9\\
 \hline
-4 & 3.73 & 1.32 & 1.56\\
-\hline
-8 & 1.75 & 0.56 & 0.83\\
-\hline
-12 & 1.07 & 0.07 & 0.12\\
-\hline
-16 & 0.65 & -0.43 & -0.51\\
-\hline
-20 & 0.31 & -1.17 & -1.11\\
-\hline
-24 & 0.16 & -1.83 & -1.83\\
-\hline
-28 & 0.1 & -2.3 & -2.3\\
-\hline
-32 & 0.04 & -3.22 & -2.81\\
-\hline
-36 & 0.02 & -3.91 & -3.5\\
-\hline
-40 & 0.01 & -4.61 & -3.91\\
+2 & 2.4 & 4 & 40\\
 \hline
 \end{tabular}
-$$\text{Charging Slope} = -0.165 1/F*s$$
-$$\text{Discharging Slope} = -0.154 1/F*s$$
-$$\text{Average Slope} = -0.1595 1/F*s$$
-$$RC \text{(Measured)} = 6.27 F*s$$
-$$RC \text{(Calculated)} = 5.67$$
-$$\text{Percent Error} = 10.6\%$$
+$$\text{Slope of $\tau$ vs C} = 3000 \Omega$$
+$$\text{Percent Difference of Slope and R} = 70\%$$
 \end{center}
 
 \begin{figure}[h]
 \centering
 \hspace*{0cm}
-\includegraphics[scale=0.45]{graph33.jpg}
+\includegraphics[scale=0.8]{graph52.jpg}
 \vspace*{0cm}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-\hspace*{0cm}
-\includegraphics[scale=0.5]{graph34.jpg}
-\vspace*{0cm}
-\end{figure}
-
-The most likely cause of error is the inaccuracy of measuring such rapid change in the voltmeter reading, both due to the limitation of the voltmeter measurement rate itself, as well as in the human capacity of record the change quickly enough. In addition, since the wires themselves are not ideal, there is some resistance from that, such that the measured RC value would be likely higher than the calculated value, due to the added in series resistance of the wire. In addition, the non-ideal voltmeter most likely would not have an infinitely high resistance, changing the flow of current.
+For the change in resistance, the main error seems to be that resistance doesn't impact the time constant experimentally. This is due to the resistance being affected by the frequency, such that the change in resistance for the same frequency has to be far greater to impact the experimental time constant. As a result, for the same frequency and capacitance, within a small region of changes in the resistance, the time constant is the same experimentally for RC circuits. In addition, difficulty operating the oscilloscope itself can account for a portion of the error. In addition, additional resistance due to non ideal wires could bring the experimental time constant up relative to the actual time constant to some degree, though this appears to have had a generally minor effect. 
 
 \section*{Conclusion}
 
-The capacitor with a capacitance of 4200 $\mu F$ with a resistor of 1350 $\Omega$ measured an RC constant of 6.27 F*s to the actual RC of 5.67 F*s, with a percent error of 10.6\%. The capacitor with a capacitance of 5100 $\mu F$ with a resistor of 1350 $\Omega$ measured an RC constant of 9.174 F*s to the actual RC of 6.885 F*s, with a percent error of 33.2\%.
+The time constant for the resistance changing trials, for a calculated RC of 10 ms was 4.2 ms with 58\% error, 5 ms was 4.2 ms with 16 \% error, and 3 ms was 4.2 ms with 40\% error. Thus, the slope of $\tau$ vs R was 0 F to the actual capacitance of 1 nF for a percent error of 100\%. The time constant for the capacitance changing trials, for a calculated RC of 7 ms was 5.4 ms with 22.9\% error, and 4 ms was 2.4 ms with 40\% error. Thus, the slope of $\tau$ vs C was 3 $k\Omega$ to the actual resistance of 10 $k\Omega$ for a percent error of 70\%.
 
 \end{document}
