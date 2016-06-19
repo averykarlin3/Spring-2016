@@ -222,4 +222,20 @@ Thus, for a separable differential equation, it can be drawn at any point on the
 
 First, we can divide by g(x), such that $f(t) = \frac{x'(t)}{g(x(t))}$, assuming that g(x(t)) is non-zero within some region, I. We thenintegrate with respect to some variable, $\tau$, such that $\int^t_a \frac{x'(\tau)}{g(x(\tau))}d\tau = \int^t_a f(\tau)d\tau$, leaving it in terms of the integral in case it is some nonstandard function, such that it cannot be differentiated precisely. Then, we let $u = x(\tau)$, such that $\int^{x(t)}_{x(a)} \frac{du}{g(u} = \int^t_a f(\tau)d\tau = F(t)$. In addition, $\int^v_{x(a)} \frac{1}{g(u)}du = G(v)$. Then, F'(t) = f(t) and G(x(t)) = F(t) + c by the Fundemental Theorem of Calculus, where $c \in \mathbb{R}$ (some constant). Thus, x(t) = $G^{-1}(F(t) + c)$.
 
+
+\section{Equation Techniques}
+\subsection{First-Order Equations with an Isolated and Missing Variable}
+
+\subsubsection*{Simple Forms}
+For some equation, x' = f(t), it can be solved simply by taking the integral of both sides, as the simplest form of a differential equation. Similarly, for some equation x = f(t) or t = f(x), it  would not be a differential equation, providing the solution. On the other hand, all equations of the general form of a missing and isolated variable can be solved simply.
+
+For some equation of the form x' = f(x), it is a seperable equation, such that it is trivial to solve by breaking up, with the singular solution of where f(x) = 0, forming a constant function. It is considered the singular case due to not fitting within the general solution for any constant of integration.
+
+\subsubsection*{t = f(x') and x = f(x')}
+For some equation, t = f(x'), where f is $C^1$ on its domain, if it is one-to-one, such that there is an inverse, it can be rewritten such that x' = g(t), where g is the inverse of f. Since g would also be $C^1$ on the interval, with a simple relationship between g' and f', such that it exists over the interval and f'(g(t)) $\neq$ 0 throughout the relevant interval (since $g'(t) = \frac{1}{f'(g(t))}$, such that otherwise, it wouldn't be $C^1$ over the interval), it is trivial.
+
+If it does not have an inverse of this, it must be solved by different means, such that p = x', such that t = f(p). Thus, if x can be put in terms of p, parametric equations can be found for x and t over the parametric interval of p, such that it varies throughout the common domain of the two parametric functions, though it also only exists on the domain of the derivative itself, such that it follows the problem itself. It is quickly derived that $\frac{dx}{dp} = \frac{dx}{dt} \cdot \frac{dt}{dp} = p \cdot \frac{d[f(p)]}{dp} = pf'(p)$ by the chain rule, such that it can be integrated to get $x = \int pf'(p)dp + C$ as the second parametric equation. 
+
+Similarly, for x = f(x'), it can by derived by the same means, such that $\frac{dt}{dp} = \frac{f'(p)}{p}$ by the chain rule, giving the second parametric equation of $t = \int \frac{f'(p)}{p}dp$ for the solution. The family of solution curves for both can then be found based on the constant of integration changing within the bounds created by the variable limits, through integration of the function, such that the integration constant is from the lower bound of the integral, within the function domain.
+
 \end{document}
