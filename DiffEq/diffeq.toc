@@ -16,3 +16,6 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Picard Method}{6}{subsubsection.3.3.2}
 \contentsline {section}{\numberline {4}First Order Scalar Ordinary Differential Equations}{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}Separable Linear Equations}{6}{subsection.4.1}
+\contentsline {section}{\numberline {5}Equation Techniques}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}First-Order Equations with an Isolated and Missing Variable}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Slope Function Dependent on a Linear Combination of Variables}{7}{subsection.5.2}
